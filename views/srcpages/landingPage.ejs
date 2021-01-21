@@ -70,7 +70,7 @@
             <div class="col-md-6">
               <div class="details">
                 <h3>Design</h3>
-                <p>I foccus on the essentials. color palettes, font, typography, spacing, responsive UI, engaging content, creative designs. I keep designs simple, clean, and professional. </p>
+                <p>I focus on the essentials. color palettes, font, typography, spacing, responsive UI, engaging content, and creative designs. I keep designs simple, clean, and professional. </p>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
             <div class="col-md-6 col-md-pull-3">
               <div class="details">
                 <h3>Develop</h3>
-                <p>I'm a full stack developer, so I can implement your goals with the latest technologies. I will launch your server connecting users to your application</p>
+                <p>I'm a full stack developer, so I can implement your goals with the latest technologies. I will launch your server connecting users to your web application. </p>
               </div>
             </div>
             <!-- col -->
@@ -106,14 +106,17 @@
         <article>
           <header class="">
             <h2>I can help.</h2>
-            <h3>I’m currently available for freelance work.</h3>
+            <h3>Contact me for inquiries or consulting</h3>
           </header>
-          <p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
+          <p>If you have a project that you want to get started, need help fixing or upgrading a code base, then get in touch with me.</p>
           <p class="btn-hldr">
             <a href="" class="main-btn">
               message me <i></i>
             </a>
           </p>
+  
+    
+
         </article>
       </div>
     </div>
@@ -125,7 +128,7 @@
 
 
     <script>
-      $(function(){
+       $(function(){
 
       var _top = $(window).scrollTop();
       var _direction;
@@ -136,17 +139,21 @@
       var width = Math.max(window.screen.width, window.innerWidth);
 
       if (width > 992) {//check the screen size
+      var navB = document.getElementById("home-top");
       if(_top < _cur_top)
         {
             _direction = 'down';
-           document.getElementById("home-top").style.top = "-200px";
+           navB.style.top = "-200px";
+           navB.style.borderBottom = "solid 0px #7d4627";
 
         }
         else
         {
             _direction = 'up';
-            document.getElementById("home-top").style.top = "0";
-            //$('home-top').css('background-color' , '#ffff !important');
+            navB.style.top = "0";
+            navB.style.borderBottom = "solid 1px #7d4627";
+            navB.style.backgroundColor = "#c5ded7";
+            $(navB).removeClass('bg-transparent')
                   
 
         }

@@ -1,0 +1,6 @@
+C:\Users\15306\OneDrive\Documents\GitHub\PortfolioWithNode\obj\Debug\PortfolioWithNode.njsprojAssemblyReference.cache
+C:\Users\15306\OneDrive\Documents\GitHub\PortfolioWithNode\obj\Debug\PortfolioWithNode.njsproj.CoreCompileInputs.cache
+C:\Users\15306\OneDrive\Documents\GitHub\PortfolioWithNode\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\15306\Documents\GitHub\PortfolioWithNode\obj\Debug\PortfolioWithNode.njsprojAssemblyReference.cache
+C:\Users\15306\Documents\GitHub\PortfolioWithNode\obj\Debug\PortfolioWithNode.njsproj.CoreCompileInputs.cache
+C:\Users\15306\Documents\GitHub\PortfolioWithNode\bin\Microsoft.NodejsTools.WebRole.dll

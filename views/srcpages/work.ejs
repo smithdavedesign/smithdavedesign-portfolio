@@ -5,602 +5,403 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<style>
+#home-top{
+background-color: #ffff;
+}
+#top{
+    background: #ffff;
+    }
+</style>
+<body>
 
+
+
+ <%- include('../partials/Header') %>
+<section style="border: aquamarine;s">
+    <div id="top" class="container">
+    <article>
+        <header class="">
+        <h2>Past Projects</h2>
+        </header>
+    </article>
+          <br/>
+
+
+
+   <style>  
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.col-sm-4{
+padding-top: 25px;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+
+}
+.card{
+height:100%;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.groups-btn{
+    color: #ffff;
+    background-color: #1e836c;
+}
+
+.iconCenter{
+height: 20px;
+margin-bottom: 0px;
+}
+.centeredBut{
+display: flex;  
+justify-content: center;  
+align-items: center;
+}
+.centeredBut button{
+    background-color: #1e836c;
+    color: white ;
+    }
+
+</style>
 </head>
 <body>
 
-<main>
-<header class="masthead masthead-page mb-5">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-lg-8 py-5">
-<h1 class="mb-2">Bootstrap Templates &amp; Themes</h1>
-<h2 class="m-0">Free Bootstrap themes that are ready to customize and publish. All of our themes are built with Bootstrap 4, MIT licensed, and updated regularly!</h2>
-</div>
-<div class="col-lg-4">
- <script async type="bbae6b68b52ef5bcbae1ffba-text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CKYIP53E&placement=startbootstrapcom" id="_carbonads_js"></script>
-</div>
-</div>
-</div>
-<svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
-<defs>
-<style>
-        .a {
-          fill: none;
-        }
+<div class="main">
 
-        .b {
-          clip-path: url(#a);
-        }
 
-        .c,
-        .d {
-          fill: #f9f9fc;
-        }
+<div class="btn-group btn-group-lg" id="myBtnContainer" role="group" aria-label="...">
 
-        .d {
-          opacity: 0.5;
-          isolation: isolate;
-        }
-      </style>
-<clipPath id="a">
-<rect class="a" width="1920" height="75" />
-</clipPath>
-</defs>
-<title>wave</title>
-<g class="b">
-<path class="c" d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48" />
-</g>
-<g class="b">
-<path class="d" d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10" />
-</g>
-<g class="b">
-<path class="d" d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24" />
-</g>
-<g class="b">
-<path class="d" d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150" />
-</g>
+ <button class="btn active groups-btn" onclick="filterSelection('All')"> Show All</button>
+
+   <button type="button" class="btn groups-btn" onclick="filterSelection('Desktop')">
+    <img class="iconCenter" src="./desktop2.svg"/>
+     Desktop
+ </button>
+
+   <button class="btn groups-btn" onclick="filterSelection('Web')"> 
+       <img class="iconCenter" src="./website.svg"/>
+
+   Web </button>
+
+    <button class="btn groups-btn" onclick="filterSelection('Mobile')">
+  <img class="iconCenter" src="./smartphone.svg"/>
 </svg>
-</header>
-<div class="container">
+    Mobile </button>
+  
+</div>
+
 
 <div class="row">
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/sb-admin-2">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/sb-admin-2.jpg" alt="Free Bootstrap Admin Theme - SB Admin 2">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB Admin 2
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A free Bootstrap admin theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro/">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-html.jpg" alt="Premium Bootstrap 4 UI Kit - SB UI Kit Pro">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB UI Kit Pro
-<span class='badge badge-warning ml-auto small badge-pill'>Pro</span>
-</div>
-<div class="item-preview-description">A premium Bootstrap 4 UI Kit</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<span class="badge badge-info position-absolute badge-pill" style="right: -.5rem; top: -.5rem; z-index: 999;">Updated!</span>
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="https://shop.startbootstrap.com/product/sb-admin-pro/">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-admin-pro-html.jpg" alt="Premium Bootstrap 4 Admin Theme - SB Admin Pro">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB Admin Pro
-<span class='badge badge-warning ml-auto small badge-pill'>Pro</span>
-</div>
-<div class="item-preview-description">A premium Bootstrap admin theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro-angular/">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-angular.jpg" alt="Premium Angular 9 UI Kit - SB UI Kit Pro">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB UI Kit Pro Angular
-<span class='badge badge-warning ml-auto small badge-pill'>Pro</span>
-</div>
-<div class="item-preview-description">A premium Angular 9 UI Kit</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="https://themes.startbootstrap.com/sb-admin-pro-angular/">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-admin-pro-angular.jpg" alt="Bootstrap Angular 9 Admin Theme - SB Admin Pro Angular">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB Admin Pro Angular
-<span class='badge badge-warning ml-auto small badge-pill'>Pro</span>
-</div>
-<div class="item-preview-description">A premium Angular 9 admin template</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/freelancer">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/freelancer.jpg" alt="One Page Bootstrap Portfolio Theme">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Freelancer
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A one page freelancer theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/creative">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/creative.jpg" alt="Free Bootstrap Creative Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Creative
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A one page creative theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/clean-blog-angular">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/clean-blog-angular.jpg" alt="Free Angular 9 Blog Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Clean Blog - Angular
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">Blog built with Angular 9 and Node.js</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/agency">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/agency.jpg" alt="Free Bootstrap Agency Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Agency
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A one page agency theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro-vue/">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-vue.jpg" alt="Premium Vue.js UI Kit - SB UI Kit Pro Vue">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-SB UI Kit Pro Vue
-<span class='badge badge-warning ml-auto small badge-pill'>Pro</span>
-</div>
-<div class="item-preview-description">A premium Vue.js UI Kit</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/grayscale">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/grayscale.jpg" alt="Grayscale ong page Bootstrap template">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Grayscale
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A multipurpose one page theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/resume">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/resume.jpg" alt="Free Bootstrap Resume/CV Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Resume
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A simple CV/resume theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/clean-blog">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/clean-blog.jpg" alt="Free Bootstrap Blog Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Clean Blog
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A clean blog theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/clean-blog-jekyll">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/clean-blog-jekyll.jpg" alt="Free Jekyll Blog Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Clean Blog - Jekyll
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">Clean Blog for Jekyll</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/landing-page">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/landing-page.jpg" alt="Free Bootstrap Landing Page Theme">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Landing Page
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A clean, functional landing page theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/stylish-portfolio">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/stylish-portfolio.jpg" alt="Free Bootstrap Portfolio Theme - Stylish Portfolio">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Stylish Portfolio
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A stylish Bootstrap portfolio theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/business-casual">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/business-casual.jpg" alt="Free Bootstrap 4 Website Themes">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Business Casual
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A fully developed business website</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/new-age">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/new-age.jpg" alt="Free Bootstrap App Landing Page Theme - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-New Age
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">An app landing page theme</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/one-page-wonder">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/one-page-wonder.jpg" alt="Free Bootstrap One Page Website Template">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-One Page Wonder
- <span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A simple one page website template</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="item-preview mb-5">
-<a class="item-preview-img box-shadow-lg d-block mb-3" href="/themes/coming-soon">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/themes/coming-soon.jpg" alt="Free Bootstrap Coming Soon Template - Start Bootstrap">
-</a>
-<div class="item-preview-title d-flex align-items-center">
-Coming Soon
-<span class='badge badge-success ml-auto small badge-pill'>Free</span>
-</div>
-<div class="item-preview-description">A coming soon landing page</div>
-</div>
-</div>
 
-<div class="col-md-4">
-<div class="text-center my-5">
-<h4>Looking for something more?</h4>
-<p class="lead">Tell us what to build next!</p>
-<button type="button" class="btn btn-primary btn-xl shadow" data-toggle="modal" data-target="#surveyModal">
-Send Feedback
-</button>
-</div>
-</div>
+    <div class="col-sm-4 Mobile">
+     <div class="card">
 
-<div class="modal fade" id="surveyModal" tabindex="-1" role="dialog" aria-labelledby="surveyModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg" role="document">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="surveyModalLabel">What should we build next?</h5>
-<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<span aria-hidden="true">&times;</span>
-</button>
-</div>
-<div class="modal-body">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyOpinSE6mUmXF72e6NRzgI7V47lRPE1z9KXFnoSMxPwTSww/viewform?embedded=true" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <img src="/cwolf.png" class="img-responsive" style="width:100%" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title">IOS - Swift </h5>
+      <small class="card-text">Social mobile interactive app. Instant chat, forums, and more</small>
+    </div>
+         <div class="card-header centeredBut">
+<button class="btn btn-primary" type="submit">More Details</button>&nbsp;<button class="btn btn-primary" type="submit">Repository</button>
+  </div>
+    <div class="card-footer centeredBut">
+      <small class="text-muted">Feb 2017</small>
+    </div>
+  </div>
+ </div>
 
-</div>
 
-<section class="after-loop">
-<div class="container">
-<div class="row">
-<div class="col-lg-4 col-md-8 mb-5 mb-lg-0 mx-auto">
-<a href="/templates/" class="after-loop-item card border-0 card-templates shadow-lg">
-<div class="card-body d-flex align-items-end flex-column text-right">
-<h4>Templates</h4>
-<p class="w-75">Unstyled layouts to help you get started!</p>
-<i class="fal fa-pencil-ruler"></i>
-</div>
-</a>
-</div>
-<div class="col-lg-4 col-md-8 mb-5 mb-lg-0 mx-auto">
-<a href="/snippets/" class="after-loop-item card border-0 card-snippets shadow-lg">
-<div class="card-body d-flex align-items-end flex-column text-right">
-<h4>Snippets</h4>
-<p class="w-75">Code snippets ready to copy and paste!</p>
-<i class="fal fa-code"></i>
-</div>
-</a>
-</div>
-<div class="col-lg-4 col-md-8 mx-auto">
-<a href="/guides/" class="after-loop-item card border-0 card-guides shadow-lg">
-<div class="card-body d-flex align-items-end flex-column text-right">
-<h4>Guides</h4>
-<p class="w-75">Guides and tutorials to help you learn Bootstrap!</p>
-<i class="fal fa-books"></i>
-</div>
-</a>
-</div>
-</div>
+     <div class="col-sm-4 Mobile">
+     <div class="card">
+
+    <img src="/mine.png" class="img-responsive" style="width:100%" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title">IOS - Swift </h5>
+      <small class="card-text">Social mobile interactive app. Instant chat, forums, and more</small>
+    </div>
+         <div class="card-header centeredBut">
+<button class="btn btn-primary" type="submit">More Details</button>&nbsp;<button class="btn btn-primary" type="submit">Repository</button>
+  </div>
+    <div class="card-footer centeredBut">
+      <small class="text-muted">Feb 2017</small>
+        </div>
+    </div>
+ </div>
+
+      <div class="col-sm-4 Web">
+     <div class="card">
+
+    <img src="/web.png" class="img-responsive" style="width:100%" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title">Web Aplication - NodeJs, JS, MSSQL, HTML5, CSS4 </h5>
+      <small class="card-text">Lab Tracking System (UCPRC) - Rebust system that automates data collection for large research lab</small>
+    </div>
+         <div class="card-header centeredBut">
+<button class="btn btn-primary" type="submit">More Details</button>&nbsp;<button class="btn btn-primary">Repository</button>
+  </div>
+    <div class="card-footer centeredBut">
+      <small class="text-muted">Feb 2019 - 2021</small>
+        </div>
+    </div>
+ </div>
+
+
+    <div class="col-sm-4 Web">
+        <div class="card">
+            <img src="/web1.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="card-body">
+                <h5 class="card-title">Web 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-sm-4 Web">
+        <div class="card">
+            <img src="/web2.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="card-body">
+                <h5 class="card-title">Web 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+        <div class="col-sm-4 Web">
+        <div class="card">
+            <img src="/web3.png" class="img-responsive" style="width:100%" alt="Image">
+            <div class="card-body">
+                <h5 class="card-title">Web 2</h5>
+                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4 Desktop"> 
+<div class="card">
+    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title">Desktop</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>   
+    </div>
+    <div class="col-sm-4 Desktop"> 
+      <div class="card">
+    <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    <div class="card-body">
+      <h5 class="card-title">Desktop 2</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>    
+    </div>
+
+
+
+  </div>
 </div>
 </section>
-</main>
-<hr class="mb-5 custom">
-<div class="container">
-<div class="text-center">
-<h4 class="mt-0 mb-1">Premium Bootstrap Themes</h4>
-<p class="mb-4 font-weight-light">Looking for something more? Try one of Start Bootstrap's premium themes!</p>
-</div>
-<div class="row justify-content-center">
-<div class="col-md-6 col-lg-3 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','SB UI Kit Pro')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-html.jpg" alt="Premium Bootstrap 4 UI Kit - SB UI Kit Pro">
-</a>
-<h6 class="mt-3 mb-0">SB UI Kit Pro</h6>
-<div class="small">A premium Bootstrap 4 UI Kit</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/sb-admin-pro/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','SB Admin Pro')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-admin-pro-html.jpg" alt="Premium Bootstrap 4 Admin Theme - SB Admin Pro">
-</a>
-<h6 class="mt-3 mb-0">SB Admin Pro</h6>
-<div class="small">A premium Bootstrap admin theme</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro-angular/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','SB UI Kit Pro Angular')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-angular.jpg" alt="Premium Angular 9 UI Kit - SB UI Kit Pro">
-</a>
-<h6 class="mt-3 mb-0">SB UI Kit Pro Angular</h6>
-<div class="small">A premium Angular 9 UI Kit</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://themes.startbootstrap.com/sb-admin-pro-angular/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','SB Admin Pro Angular')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-admin-pro-angular.jpg" alt="Bootstrap Angular 9 Admin Theme - SB Admin Pro Angular">
-</a>
-<h6 class="mt-3 mb-0">SB Admin Pro Angular</h6>
-<div class="small">A premium Angular 9 admin template</div>
-</div>
-</div>
-<div class="col-md-6 col-lg-3 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/sb-ui-kit-pro-vue/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','SB UI Kit Pro Vue')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/sb-ui-kit-pro-vue.jpg" alt="Premium Vue.js UI Kit - SB UI Kit Pro Vue">
-</a>
-<h6 class="mt-3 mb-0">SB UI Kit Pro Vue</h6>
-<div class="small">A premium Vue.js UI Kit</div>
-</div>
-</div>
-</div>
-<div class="text-center">
-<h4 class="mt-5 mb-1"><span class="badge badge-primary badge-pill">New!</span> Premium Bundles!</h4>
-<p class="mb-4 font-weight-light">Bundle our pro HTML products or our pro Angular 9 products together and save!</p>
-</div>
-<div class="row">
 
-<div class="col-md-6 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/pro-html-bundle/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','Pro HTML Bundle')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/html-bundle.jpg" alt="Start Bootstrap Pro HTML Bundle">
-</a>
-<h6 class="mt-3 mb-0">Pro HTML Bundle</h6>
-<div class="small">Includes SB Admin Pro and SB UI Kit Pro</div>
-</div>
-</div>
-
-<div class="col-md-6 mb-4">
-<div class="item-preview">
-<a class="item-preview-img box-shadow-lg d-block" href="https://shop.startbootstrap.com/product/pro-angular-bundle/" onclick="if (!window.__cfRLUnblockHandlers) return false; ga('send','event','Premium Link','click','Pro Angular Bundle')" rel="nofollow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-="">
-<img class="lazy img-fluid" data-src="/assets/img/screenshots/premium/angular-bundle.jpg" alt="Start Bootstrap Pro Angular 9 Bundle">
-</a>
-<h6 class="mt-3 mb-0">Pro Angular Bundle</h6>
-<div class="small">Includes SB Admin Pro Angular and SB UI Kit Pro Angular</div>
-</div>
-</div>
-</div>
-<div class="text-center">
-<a href="/buy-bootstrap-themes" class="btn btn-primary btn-xl shadow">View More Premium Themes</a>
-</div>
-</div>
-<div class="mailchimp mt-5">
-<div class="container text-center">
-<div class="row justify-content-center">
-<div class="col-xl-7 col-lg-8">
-<h3 class="mb-0">Want more Bootstrap themes &amp; templates?</h3>
-<p class="text-white-50">Subscribe to get updated when new Bootstrap related products arrive!</p>
-<div id="mc_embed_signup">
-<form role="form" action="https://startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="novalidate">
-<div class="input-group input-group-lg">
-<input type="email" name="EMAIL" class="form-control border-0" id="mce-EMAIL" placeholder="Email address...">
-<div class="input-group-append">
-<button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-light">Subscribe!</button>
-</div>
-</div>
-<div id="mce-responses">
-<div class="response" id="mce-error-response" style="display:none"></div>
-<div class="response" id="mce-success-response" style="display:none"></div>
-</div>
-</form>
-</div>
-<div class="text-center mt-4">
-<p class="text-white-50 mb-4">or get updates on Twitter</p>
-<a href="javascript:void(0)" onclick="if (!window.__cfRLUnblockHandlers) return false; window.open('https://twitter.com/intent/user?original_referer=&amp;region=screen_name&amp;screen_name=SBootstrap&amp;source=followbutton&amp;variant=1.1', 'twitter', 'toolbar=no, width=450, height=600'); return false;" class="btn btn-twitter btn-xl shadow" data-cf-modified-bbae6b68b52ef5bcbae1ffba-=""><i class="fab fa-twitter mr-2"></i> Follow @SBootstrap</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<footer>
-<div class="mt-5">
-<div class="container text-center">
-<p class="lead">And now, a word from our sponsors...</p>
-<div class="row">
-<div class="col-lg-8 col-md-10 mx-auto">
-<div class="bsa-cpc"></div>
-</div>
-</div>
-</div>
-</div>
-<script type="bbae6b68b52ef5bcbae1ffba-text/javascript">
-    (function() {
-      if (typeof _bsa !== 'undefined' && _bsa) {
-        _bsa.init('default', 'CKYD6KQU', 'placement:startbootstrapcom', {
-          target: '.bsa-cpc',
-          align: 'horizontal',
-          disable_css: 'true'
-        });
-      }
-    })();
-    // Function to check whether there are any ads are visible. If not ads are loaded, hide the container.
-    window.onload = function() {
-      if (document.getElementsByClassName("_default_").length > 0) {
-        document.getElementsByClassName("bsa-ad")[0].style.display = "flex";
-      }
-    }
-  </script>
-<div class="footer-social my-5">
-<div class="container">
-<div class="d-flex justify-content-center">
- <a class="footer-social-link d-inline-flex mx-3 justify-content-center align-items-center text-white rounded-circle shadow btn btn-github" href="https://github.com/StartBootstrap">
-<i class="fab fa-github"></i>
-</a>
+<%- contentFor('Footer') %>
+  <%- include('../partials/Footer')%>
 
 
-<a class="footer-social-link d-inline-flex mx-3 justify-content-center align-items-center text-white rounded-circle shadow btn btn-twitter" href="https://twitter.com/sbootstrap">
-<i class="fab fa-twitter"></i>
-</a>
-<a class="footer-social-link d-inline-flex mx-3 justify-content-center align-items-center text-white rounded-circle shadow btn btn-facebook" href="https://www.facebook.com/StartBootstrap/">
-<i class="fab fa-facebook-f"></i>
-</a>
-</div>
-</div>
-</div>
-<div class="footer-main bg-dark py-5 small">
-<div class="container">
-<a href="/about">Start Bootstrap</a>
-is a project created and maintained by
-<a href="http://davidmiller.io">David Miller</a>.
-<br>
-Themes, templates, and snippets licensed
-<a href="https://opensource.org/licenses/MIT">MIT</a>, Start Bootstrap website
-<a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a>.
-<br>
-Based on
-<a href="https://getbootstrap.com">Bootstrap</a>.
-</div>
-</div>
-</footer>
-<script id="dsq-count-scr" src="//startbootstrap.disqus.com/count.js" async type="bbae6b68b52ef5bcbae1ffba-text/javascript"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous" type="bbae6b68b52ef5bcbae1ffba-text/javascript"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous" type="bbae6b68b52ef5bcbae1ffba-text/javascript"></script>
-<script type="bbae6b68b52ef5bcbae1ffba-text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script type="bbae6b68b52ef5bcbae1ffba-text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
-<script src="/assets/js/scripts.js" type="bbae6b68b52ef5bcbae1ffba-text/javascript"></script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/7089c43e/cloudflare-static/rocket-loader.min.js" data-cf-settings="bbae6b68b52ef5bcbae1ffba-|49" defer=""></script></body>
+</body>
+
+
 
 <script>
-$(function() {
-  $('[data-toggle="tooltip"]').tooltip()
 
-  // Play initial animations on page load.
-  $(window).on('load', function() {
-    window.setTimeout(function() {
-      $('body').removeClass('is-preload');
-    }, 100);
-  });
-
-});
-
-$(function() {
-  $('.lazy').Lazy();
-});
-
-$('body').scrollspy({
-    target: '.resources-sidebar>.sticky-top>ul'
-  })
-
-  // Twitter Widget
-  ! function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (!d.getElementById(id)) {
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
+function filterSelection(c) {
+    if(c=='All'){
+      $('.col-sm-4').each(function(index){
+        $(this).show();
+      });
     }
-  }(document, "script", "twitter-wjs");
-
-// Twitch Widget
-(function() {
-
-  var user_name, api_key, twitch_widget;
-
-  user_name = "startbootstrap";
-  api_key = "5j0r5b7qb7kro03fvka3o8kbq262wwm";
-  twitch_widget = $("#twitch-widget");
-
-  twitch_widget.attr("href", "https://twitch.tv/" + user_name);
-
-  $.getJSON('https://api.twitch.tv/kraken/streams/' + user_name + '?client_id=' + api_key + '&callback=?', function(data) {
-    if (data.stream) {
-      twitch_widget.html('<div class="py-3 bg-twitch shadow-sm"><div class="container d-flex align-items-center justify-content-center"><span class="badge text-uppercase mr-3 text-white"><i class="fas fa-circle fa-sm text-danger"></i> Live</span> Start Bootstrap is live on Twitch.tv! Click here to watch and to chat with the developer!</div></div>');
-    } else {
-      twitch_widget.html('');
-    }
-  });
-
-})();
+    else{
+          $('.col-sm-4').each(function(index){
+            $(this).hide();
+          });
+          $('.'+c).each(function(index){
+               var i, arr1, arr2;
+               var element = this;
+               $(element).show();
+          });
+  }
+}
 
 </script>
+
+
+
+    <script>
+    $(document).ready(function() {
+
+  $('body').addClass('js');
+  var $menu = $('#menu'),
+    $menulink = $('.menu-link');
+
+  $menulink.click(function() {
+    $menulink.toggleClass('active');
+    $menu.toggleClass('active');
+    toggleButtonText($(this));
+    return false;
+  });
+
+  function toggleButtonText(element) {
+    if (element.html() == 'CLOSE') {
+      element.html('MENU');
+    } else {
+      element.html('CLOSE');
+    }
+  }
+
+  $('.item-info').hide()
+
+  $('.item').mouseenter(function() {
+    $(this).find('.item-info').fadeIn(300);
+    $(this).css("cursor", "pointer");
+  });
+
+  $('.item').mouseleave(function() {
+    $(this).find('.item-info').fadeOut(300)
+  });
+  // Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+});
+/********* BACK TO TOP ***********/
+if ($('#back-to-top').length) {
+  var scrollTrigger = 100, // px
+    backToTop = function() {
+      var scrollTop = $(window).scrollTop();
+      if (scrollTop > scrollTrigger) {
+        $('#back-to-top').addClass('show');
+      } else {
+        $('#back-to-top').removeClass('show');
+      }
+    };
+  backToTop();
+  $(window).on('scroll', function() {
+    backToTop();
+  });
+  $('#back-to-top').on('click', function(e) {
+    e.preventDefault();
+    $('html,body').animate({
+      scrollTop: 0
+    }, 700);
+  });
+}
+
+
+
+
+       $(function(){
+
+      var _top = $(window).scrollTop();
+      var _direction;
+      $(window).scroll(function(){
+      var _cur_top = $(window).scrollTop();
+
+      var mq = window.matchMedia( "(min-width: 992x)" );
+      var width = Math.max(window.screen.width, window.innerWidth);
+
+      if (width > 992) {//check the screen size
+      var navB = document.getElementById("home-top");
+      if(_top < _cur_top)
+        {
+            _direction = 'down';
+           navB.style.top = "-200px";
+           navB.style.borderBottom = "solid 0px #7d4627";
+
+        }
+        else
+        {
+            _direction = 'up';
+            navB.style.top = "0";
+            navB.style.borderBottom = "solid 1px #7d4627";
+            navB.style.backgroundColor = "#c5ded7";
+            $(navB).removeClass('bg-transparent')
+                  
+
+        }
+        _top = _cur_top;
+      } else {
+      }
+
+     
+    });
+});
+      
+    </script>
 </html>

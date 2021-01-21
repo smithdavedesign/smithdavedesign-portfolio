@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<style>
+
+</style>
+
+<body>
+
+
+
+
+<style type="text/css">
+	.parallaxParent {
+		height: 100vh;
+		overflow: hidden;
+	}
+	.parallaxParent > * {
+		height: 200%;
+		position: relative;
+		top: -100%;
+	}
+</style>
+<div class="spacer s0"></div>
+<div id="parallax1" class="parallaxParent">
+		<div style="background-image: url(./TMB3.jpg);"></div>
+</div>
+<div class="spacer s1">
+	<div class="box2 blue">
+		<p>Content 1</p>
+		<a href="#" class="viewsource">view source</a>
+	</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax2" class="parallaxParent">
+	<div style="background-image: url(./TMB1.jpg);"></div>
+</div>
+<div class="spacer s1">
+	<div class="box2 blue">
+		<p>Content 2</p>
+		<a href="#" class="viewsource">view source</a>
+	</div>
+</div>
+<div class="spacer s0"></div>
+<div id="parallax3" class="parallaxParent">
+	<div style="background-image: url(./TMB2.jpg);"></div>
+</div>
+<div class="spacer s2"></div>
+<script>
+	// init controller
+	var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+	// build scenes
+	new ScrollMagic.Scene({triggerElement: "#parallax1"})
+					.setTween("#parallax1 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+	new ScrollMagic.Scene({triggerElement: "#parallax2"})
+					.setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+
+
+</script>
+
+</body>
+</html>

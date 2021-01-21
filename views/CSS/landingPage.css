@@ -7,6 +7,100 @@
     font family: Lora Meri 
     Dallas or Monoke or Surf
  */
+footer p{
+    color:#ffff;
+}
+.svgPictures {
+    height: 25px;
+}
+
+
+a.logo {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 900;
+    padding: 20px 30px;
+}
+
+    a.logo:hover {
+        cursor: pointer;
+    }
+
+
+.js nav[role=navigation] {
+    overflow: hidden;
+    max-height: 0;
+}
+
+/* TEXT TYPING */
+.teletype-prefix {
+    display: none;
+}
+
+.type-text {
+    text-align: center;
+    padding: 50px 0;
+}
+
+    .type-text span {
+        font-size: 3em;
+        font-weight: 900;
+    }
+
+/* PORTFOLIO GRID */
+.projects {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+    .projects .item {
+        background-image: url('https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052');
+        background-size: cover;
+        background-position: center center;
+        min-height: 400px;
+        min-width: 400px;
+    }
+
+.item-info {
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    min-width: 400px;
+    min-height: 400px;
+}
+
+    .item-info h2 {
+        font-weight: 900;
+        color: #ffffff;
+    }
+
+    .item-info span {
+        color: #cfcfcf;
+        font-family: Arial;
+        font-style: italic;
+        font-size: 0.9em;
+        padding-top: 5px;
+    }
+
+
+/*//////////////////////////////////////////////*/
+
 
 @font-face {
     font-family: 'Lora';
@@ -6980,7 +7074,7 @@ th.visible-print, td.visible-print {
 
 header {
     background: #e0ebe8;
-    padding: 2em 0
+    /*padding: 2em 0*/
 }
 
     header .nav-list {
@@ -7629,9 +7723,9 @@ article header {
         text-align: center;
         display: block;
         position: relative;
-        background: #7d4627;
+        background: #1e836c;
         padding: .75em 2em .75em 3.5em;
-        color: #1b7f69;
+        color: #ffff;
         text-decoration: none;
         margin: 1.5em 0 0;
         border-radius: 3px;
@@ -7692,15 +7786,20 @@ footer {
 }
 
     footer p {
-        text-align: center;
         color: #7d4627;
         font-size: 1em;
         font-weight: 400;
         margin: 0;
         padding: 2.5em 0 0
     }
-
-    footer .footer-list {
+    footer a {
+        color: #7d4627;
+        font-size: 1em;
+        font-weight: 400;
+        margin: 0;
+        padding: 2.5em 0 0
+    }
+        footer .footer-list {
         overflow: hidden;
         margin: 0 auto;
         max-width: 600px;

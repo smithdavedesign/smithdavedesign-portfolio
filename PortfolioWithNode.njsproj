@@ -42,7 +42,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\CSS\Lora-Regular.woff" />
+    <Content Include="views\CSS\Lora-Regular.woff2" />
     <Content Include="views\CSS\Merriweather-Regular.woff" />
+    <Content Include="views\CSS\Merriweather-Regular.woff2" />
     <Content Include="views\CSS\transfonter.org-20200829-075034.zip" />
     <Content Include="views\layout.ejs">
       <SubType>Code</SubType>
@@ -56,6 +58,7 @@
     <Content Include="views\partials\Header.ejs">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="views\partials\hr.ejs" />
     <Content Include="views\partials\NavBar.ejs">
       <SubType>Code</SubType>
     </Content>
@@ -66,6 +69,9 @@
     <Content Include="views\public\TMB2.jpg" />
     <Content Include="views\public\TMB3.jpg" />
     <Content Include="views\srcpages\landingPage.ejs">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="views\srcpages\mountain.ejs">
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\srcpages\work.ejs">
