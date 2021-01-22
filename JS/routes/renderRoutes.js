@@ -19,4 +19,8 @@ router.get('/', function (req, res) {
     res.render('srcpages/landingPage');
 });
 
+router.get('/bio', function (req, res) {
+    res.render('srcpages/bio');
+});
+
 module.exports = router;
