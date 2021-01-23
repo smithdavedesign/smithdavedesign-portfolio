@@ -1,58 +1,12 @@
-<section id="top" style="background-image: url('./switz1.jpg');">
   <%- include('../partials/Header') %>
-  
-  <div class="mainWrapper">
-    <div id="title">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div id="headSlide" class="transistion">
-              <div class="slide-contents">
-                <div class="slide">
-                  <h2 class="dave w3-hide-medium w3-hide-small" style="color:#f1f1f1;">
-                    
-                    <figure class="transistion">
-                      <!--<img src="me.png" id="header-logo">-->
 
-                    </figure>
-                  
-                      <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-                        <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="    color: #7d4627;">I'm Dave</h1>
-                        <h3 class="w3-hide-medium w3-hide-small" style="    color: #7d4627;">Developer &amp; Designer</h3>
-                      </div>
-                    
-                  </h2>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-<section id="FirstSection" style="border: aquamarine;s">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <article>
-          <figure>
-            <img src="me.png"/>			
-		</figure>
-          <h3>Hello.</h3>
-          <p>I'm a web developer / designer. I love bringing others creative visions to life on the web. </p>
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
-<%- include('../partials/hr') %>
-
+ <style>
+.center{
+    display: flex;
+    justify-content: center;
+}
+  </style>
+<br>
 
   <section id="seccondSection">
   <div class="container">
@@ -60,69 +14,110 @@
       <div class="col-md-12">
         <article>
           <header class="nav-root" style="background-color: white;">
-            <h2>What I can do.</h2>
-          </header>
-          <div id="design" class="row">
-            <div class="col-md-4 col-md-offset-1">
-              <div class="home-design-info">
-                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_nBPnXI.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop=""  autoplay=""></lottie-player>              </div>
+            <h2>A bit about me</h2>
+             <%- include('../partials/hr') %>
+
+
+            <div class="details">
+                <p style="  line-height: 200%;">My passion is in technology! I am a hard working problem solver who is passionate about full stack development, new technology / languages, machine learning, and helping others as a software engineer. I have worked throughout northern California and currently live and work in the north bay area. When I am not programming you can find me hiking, mountaineering, playing soccer, and enjoying friends and family!  </p>
             </div>
-            <div class="col-md-6">
-              <div class="details">
-                <h3>Design</h3>
-                <p>I focus on the essentials. color palettes, font, typography, spacing, responsive UI, engaging content, and creative designs. I keep designs simple, clean, and professional. </p>
-              </div>
-            </div>
-          </div>
-          <div id="develop" class="row">
-            <div class="col-md-4 col-md-push-7">
-              <div class="home-dev-info">
-                <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_ioJYvK.json"  background="transparent"  speed="1"  style="width: 100%; height: 100%;"  loop=""  autoplay=""></lottie-player>
-              </div>
-            </div>
-            <!-- col -->
-            <div class="col-md-6 col-md-pull-3">
-              <div class="details">
-                <h3>Develop</h3>
-                <p>I'm a full stack developer, so I can implement your goals with the latest technologies. I will launch your server connecting users to your web application. </p>
-              </div>
-            </div>
-            <!-- col -->
-          </div>
-          <!-- /row -->
+               <br>
+                 
+               </br>
+                    <div class="row">
+                    <div class="col-sm-4"> 
+                    <div class="center">
+                      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fsonufza.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>          
+                    </div>
+                      <h4>
+                        <p style="text-align: center;"><a href="index.html">Education</a></p>
+                      </h4>
+                    </div>
+                        <div class="col-sm-4"> 
+                    <div class="center">
+                      <lottie-player src="https://assets7.lottiefiles.com/temp/lf20_NxuRdg.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>                    </div>
+                          <h4>
+                            <p style="text-align: center;">
+                              <a href="index.html">Resume</a>
+                            </p>
+
+                          </h4>
+                    </div>
+                         <div class="col-sm-4"> 
+                    <div class="center">
+                      <!--<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9W7N8f.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>  -->
+                      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_DnLK6k.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>
+                    </div>
+                           <h4>
+                             <p style="text-align: center;">
+                               <a data-toggle="modal" data-target="#exampleModalCenter">Connect</a>
+                             </p>
+
+                           </h4>
+                    </div>
+                         
+                    </div>
+
         </article>
       </div>
     </div>
   </div>
 </section>
+  <section id="thirdSection">
+    <div class="container">
+      <p>Check out me and my brothers new casual tech talking youtube channel.</p>
+      <iframe width="100%" height="475px" src="https://www.youtube.com/embed/GGPolr5ySa4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+    </div>
+  </section>
 
-  <%- include('../partials/hr') %>
 
 
-    <section id="thirdSection">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <article>
-          <header class="">
-            <h2>I can help.</h2>
-            <h3>Contact me for inquiries or consulting</h3>
-          </header>
-          <p>If you have a project that you want to get started, need help fixing or upgrading a code base, then get in touch with me.</p>
-          <p class="btn-hldr">
-            <a href="" class="main-btn">
-              message me <i></i>
-            </a>
-          </p>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="position: absolute;" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"  style="position: absolute;" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
   
-    
-
-        </article>
-      </div>
-    </div>
-  </div>
-</section>
-
+  
+  
 <%- contentFor('Footer') %>
   <%- include('../partials/Footer')%>
 

@@ -7,6 +7,19 @@
     font family: Lora Meri 
     Dallas or Monoke or Surf
  */
+.techIcons a i{
+    list-style: none;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    padding-top: 4px;
+    padding-bottom: 0px;
+    color: #2c3e50;
+
+}
+.techIcons {
+ 
+}
 footer p{
     color:#ffff;
 }
