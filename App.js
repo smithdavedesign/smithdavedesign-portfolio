@@ -40,5 +40,5 @@ app.use('/', require('./JS/routes/renderRoutes'));
 
 var httpPort = settings.webPort;//not using, for dev
 app.listen(process.env.PORT || 9000, function () {
-    console.log('Started http listener on port: ', PORT);
+    console.log('Started http listener on port: ', process.env.PORT);
 })
