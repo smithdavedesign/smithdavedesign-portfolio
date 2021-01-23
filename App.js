@@ -8,7 +8,6 @@ const util = require('util');
 const https = require('https');
 const http = require('http');
 const ejs = require('ejs');
-var PORT = process.env.PORT || 5000;
 /////////////////////////////////////////////////////////////
 const fs = require('fs');
 /////////////////////////////////////////////////////////////
@@ -40,6 +39,6 @@ app.use('/', require('./JS/routes/renderRoutes'));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var httpPort = settings.webPort;//not using, for dev
-app.listen(PORT, function () {
+app.listen(process.env.PORT || 9000, function () {
     console.log('Started http listener on port: ', PORT);
 })
