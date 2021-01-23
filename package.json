@@ -2,7 +2,7 @@
   "name": "portfolio-with-node",
   "version": "0.0.0",
   "description": "PortfolioWithNode",
-  "main": "server.js",
+  "main": "app.js",
   "author": {
     "name": ""
   },
@@ -22,6 +22,7 @@
     "util": "^0.12.3"
   },
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "jest"
   }
 }
