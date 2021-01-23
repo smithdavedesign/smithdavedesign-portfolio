@@ -2,7 +2,7 @@
   "name": "portfolio-with-node",
   "version": "0.0.0",
   "description": "PortfolioWithNode",
-  "main": "app.js",
+  "main": "server.js",
   "author": {
     "name": ""
   },
