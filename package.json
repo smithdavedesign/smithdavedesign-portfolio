@@ -1,10 +1,14 @@
 {
   "name": "portfolio-with-node",
-  "version": "0.0.0",
-  "description": "PortfolioWithNode",
-  "main": "server.js",
-  "author": {
-    "name": ""
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.18.2"
+  },
+  "scripts": {
+    "heroku-prebuild": "echo This runs before Heroku installs dependencies.",
+    "heroku-postbuild": "echo This runs after Heroku installs dependencies, but before Heroku prunes and caches dependencies.",
+    "heroku-cleanup": "echo This runs after Heroku prunes and caches dependencies."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
@@ -20,9 +24,5 @@
     "os": "^0.1.1",
     "purgecss": "^2.3.0",
     "util": "^0.12.3"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "test": "jest"
   }
 }
