@@ -1,0 +1,6 @@
+{
+  "name": "my node portfolio",
+  "description": "first heroku launch",
+  "repository": "https://github.com/smithdavedesign/smithdavedesign---Web-Page.git",
+  "keywords": ["node","express", "static"]
+}

@@ -15,6 +15,7 @@ const fs = require('fs');
 const app = express();//create instance of express
 
 //Express middle ware
+app.set('port', (process.env.PORT || 5000))
 app.set('view engine', 'ejs');//view engine
 app.use(expressLayouts);
 app.use(bodyParser.json());
@@ -39,6 +40,6 @@ app.use('/', require('./JS/routes/renderRoutes'));
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var httpPort = settings.webPort;//not using, for dev
-app.listen(process.env.PORT || 9000, function () {
+app.listen(app.get('port'), function () {
     console.log('Started http listener on port: ', process.env.PORT);
 })
