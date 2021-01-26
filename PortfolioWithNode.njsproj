@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>2b4136d5-f022-4ec2-9391-c3ea6e2033f9</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>app.js</StartupFile>
+    <StartupFile>server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,7 +28,10 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="app.js" />
+    <Content Include="server.js" />
+    <Content Include="app.json">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="JS\config\settings.js">
       <SubType>Code</SubType>
     </Content>
@@ -37,6 +40,9 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="package.json" />
+    <Content Include="Procfile">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="README.md" />
     <Content Include="views\CSS\landingPage.css">
       <SubType>Code</SubType>
@@ -59,15 +65,15 @@
       <SubType>Code</SubType>
     </Content>
     <Content Include="views\partials\hr.ejs" />
-    <Content Include="views\partials\NavBar.ejs">
-      <SubType>Code</SubType>
-    </Content>
     <Content Include="views\public\me.png" />
     <Content Include="views\public\TMB.jpg" />
     <Content Include="views\public\TMB1.jpg" />
     <Content Include="views\public\TMB1edit.jpg" />
     <Content Include="views\public\TMB2.jpg" />
     <Content Include="views\public\TMB3.jpg" />
+    <Content Include="views\srcpages\bio.ejs">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="views\srcpages\landingPage.ejs">
       <SubType>Code</SubType>
     </Content>

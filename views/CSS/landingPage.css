@@ -7,6 +7,9 @@
     font family: Lora Meri 
     Dallas or Monoke or Surf
  */
+.biobuttons {
+    color: #7d4627;
+}
 .techIcons a i{
     list-style: none;
     font-size: 30px;
@@ -17,9 +20,7 @@
     color: #2c3e50;
 
 }
-.techIcons {
- 
-}
+
 footer p{
     color:#ffff;
 }
@@ -27,7 +28,42 @@ footer p{
     height: 25px;
 }
 
+/*centered modals*/
+.modal-dialog {
+    position: absolute;
+    top: 50% !important;
+    transform: translate(0, -50%) !important;
+    -ms-transform: translate(0, -50%) !important;
+    -webkit-transform: translate(0, -50%) !important;
+    margin: auto 5%;
+    width: 90%;
+    height: 80%;
+}
 
+.modal-content {
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.modal-body {
+
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+/**/
 a.logo {
     text-decoration: none;
     font-size: 1.3em;
@@ -1853,26 +1889,19 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 
 
-.modal-open {
-    overflow: hidden
-}
-
     body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
         margin-right: 15px
     }
 
-.modal {
-    display: none;
-    overflow: auto;
-    overflow-y: scroll;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1040
+.table {
+    display: table;
+    height: 100%;
 }
 
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
     .modal.fade .modal-dialog {
         -webkit-transform: translate(0,-25%);
         -ms-transform: translate(0,-25%);
@@ -1897,27 +1926,6 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     z-index: 1050
 }
 
-.modal-content {
-    position: relative;
-    background-color: #fff;
-    border: 1px solid #999;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: 6px;
-    -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
-    box-shadow: 0 3px 9px rgba(0,0,0,.5);
-    background-clip: padding-box;
-    outline: 0
-}
-
-.modal-backdrop {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 1030;
-    background-color: #000
-}
 
     .modal-backdrop.fade {
         opacity: 0;
@@ -1945,8 +1953,7 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 }
 
 .modal-body {
-    position: relative;
-    padding: 20px
+    padding: 5px
 }
 
 .modal-footer {

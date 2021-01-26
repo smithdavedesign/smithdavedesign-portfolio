@@ -3,6 +3,8 @@ const express = require('express');//web framework for node
 const expressLayouts = require('express-ejs-layouts');// ejs view engine
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+var multer = require('multer');
+var upload = multer();
 const cors = require('cors')
 const util = require('util');
 const https = require('https');
@@ -14,12 +16,14 @@ const fs = require('fs');
 
 const app = express();//create instance of express
 
+
 //Express middle ware
 app.set('port', (process.env.PORT || 5000))
 app.set('view engine', 'ejs');//view engine
 app.use(expressLayouts);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(upload.array());
 app.use(cookieParser());
 app.use(cors({ origin: '*' }));
 app.use(express.static('views/public'));
@@ -32,7 +36,7 @@ app.use(express.static("."));
 
 //routes
 app.use('/', require('./JS/routes/renderRoutes'));
-//app.use('/', require('./JS/routes/webServices'));
+app.use('/', require('./JS/routes/webServices'));
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
