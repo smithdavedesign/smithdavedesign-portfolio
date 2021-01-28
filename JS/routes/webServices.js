@@ -4,6 +4,7 @@ const OAuth2 = google.auth.OAuth2;
 const express = require('express');
 const router = express.Router();
 
+//this route uses google api tokens that i have setup
 router.post('/sendEmail', function (req, res, next) {
     var email = req.body.email;
     var to = 'smithdavedesign@gmail.com'
@@ -66,6 +67,7 @@ clientid: 643240895475-3n8sh6flr32fdvie3uuk88ei6qd3eifh.apps.googleusercontent.c
 secrete: ZMtf-MuhhiUaccUqBSndRLb7
 */
 
+//this uses just nodemailer, cannot be used in production with heroku and gmail.
 router.post('/sendEmail2', function (req, res, next) {
 
 // async..await is not allowed in global scope, must use a wrapper
