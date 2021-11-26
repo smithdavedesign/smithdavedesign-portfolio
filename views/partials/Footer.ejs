@@ -1,32 +1,104 @@
-<!--
-footer style="background-image: url('./TMB1.jpg');">
-	<div class="container">
-		<div class="row">
-      <div class="col-md-12">
-        <ul class="footer-list">
-          <li>
-            <a href="">Github</a>
-          </li>
-          <li>
-            <a href="">instagram</a>
-          </li>
-          <li>
-            <a href="">Linkedin</a>
-          </li>
-          <li>
-            <a href="">Youtube</a>
-          </li>
-        </ul>
+
+<!-- Modal -->
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog" >
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 id="connectTrig">
+          <p class="biobuttons" style="text-align: center;">
+          Contact Me
+          </p>
+        </h4>          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-		</div>
-		<div class="row">
-			<div class="col-md-12">
-				
-			</div>
-		</div>
-	</div>
-</footer>
--->
+      <div class="modal-body">
+        <form class="contactFormClass" role="form" method="post" action = "/sendEmail" >
+
+          <div class="form-group">
+
+            <input type="text" class="form-control" placeholder="Full Name"
+            id="name" name="name"   required="" maxlength="50">
+            <span class="focus-input100"></span>
+
+            </div>
+          <div class="form-group">
+
+            <input type="email" class="form-control" placeholder="Email"
+            id="email" name="email" required="" maxlength="50">
+            <span class="focus-input100"></span>
+            </div>
+          <div class="form-group">
+            <input type="subject" class="form-control"    id="subject" name="subject" required="" maxlength="50" placeholder="Subject">
+          </div>
+          <div class="form-group">
+
+            <textarea class="form-control" type="textarea" name="message"
+            id="message" placeholder="Your Message Here"
+            maxlength="6000" rows="7"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-lg btn-success btn-block main-btn" id="btnContactUs">Send! →</button>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+          <h3>Sent your message successfully!</h3>
+        </div>
+        <div id="error_message"
+        style="width:100%; height:100%; display:none; ">
+          <h3>Error</h3>
+          Sorry there was an error sending your form.
+
+        </div>
+      </div>
+      <dl style="text-align: center;">
+        <dt>
+          <a  href="https://www.linkedin.com/in/codingforgood/">
+            <img class="svgPictures" target="blank" src="/linkedin.svg"/>
+          </a>
+        </dt>
+        <dt>
+          <a  href="https://github.com/smithdavedesign">
+            <img style="height: 40px;" target="blank" src="/github.svg" />
+          </a>
+        </dt>
+        <dt>
+          <a  href="https://stackoverflow.com/users/8742887/david-george-smith">
+            <img class="svgPictures" target="blank" src="/stackoverflow.svg"/>
+          </a>
+        </dt>
+        <dt>
+            <a  href=""> 
+              <img class="svgPictures" target="blank" src="/twitter.svg"/>
+            </a>
+        </dt>
+        <dt>
+          <a  href="https://www.facebook.com/smithdavedesign">
+            <img class="svgPictures" target="blank" src="/fb.svg"/>
+          </a>
+        </dt>
+    
+        <dt>
+          <a  href="https://www.instagram.com/smithdavedesign/">
+            <img class="svgPictures" target="blank" src="/instagram.svg"/>
+          </a>
+        </dt>
+    
+      </dl>
+    </div>
+  </div>
+</div>
+<script>
+  $('#btnContactUs').click(function() {
+   $('#myModal').modal('hide');
+});
+</script>
+
+
+
 <style>
   footer{
   background-size: 600% 600%;

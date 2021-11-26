@@ -12,6 +12,11 @@
         border: none;   
 }
 
+dl dt {
+    display: inline-block;
+    margin-right: 30px;
+    }
+
 .focus-input100 {
     display: block;
     position: absolute;
