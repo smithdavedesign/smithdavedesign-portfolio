@@ -45,5 +45,5 @@ app.use('/', require('./JS/routes/webServices'));
 
 var httpPort = settings.webPort;//not using, for dev
 app.listen(app.get('port'), function () {
-    console.log('Started http listener on port: ', process.env.PORT);
+    console.log('Started http listener on port: ', process.env.PORT || 5000);
 })

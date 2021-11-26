@@ -1,12 +1,42 @@
-/*!
-    color scheme:
-        #edd9c0
-        #c9d8c5
-        #a8b6bf
-        #7d4627
-    font family: Lora Meri 
-    Dallas or Monoke or Surf
- */
+.contactFormClass input{
+        position: relative;
+        display: block;
+        width: 100%;
+        background: #fff;
+        border-radius: 31px;
+        font-family: Ubuntu-Bold;
+        font-size: 18px;
+        color: #8f8fa1;
+        line-height: 1.2;
+        outline: none;
+        border: none;   
+}
+
+.focus-input100 {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-radius: 31px;
+    background-color: #fff;
+    pointer-events: none;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+
+
+
 .biobuttons {
     color: #7d4627;
 }
@@ -29,32 +59,45 @@ footer p{
 }
 
 /*centered modals*/
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+  }
+  
+  .modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px; /* Adjusts for spacing */
+  }
+  
 .modal-dialog {
-    position: absolute;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    vertical-align: middle;
     top: 50% !important;
     transform: translate(0, -50%) !important;
     -ms-transform: translate(0, -50%) !important;
     -webkit-transform: translate(0, -50%) !important;
     margin: auto 5%;
-    width: 90%;
-    height: 80%;
+    width: 100%!important;
+    height: 100%!important;
 }
 
-.modal-content {
-    min-height: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
 
 .modal-body {
-
     left: 0;
     right: 0;
     overflow-y: auto;
+   
 }
+.modal-content {
+    background: #c5ded7;
+}
+
 
 .modal-footer {
     position: absolute;
@@ -1996,7 +2039,6 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 @media screen and (min-width:768px) {
     .modal-dialog {
-        left: 50%;
         right: auto;
         width: 600px;
         padding-top: 30px;
@@ -2940,6 +2982,25 @@ article header {
 
 
     .btn-hldr .main-btn {
+        font-size: .8em;
+        text-align: center;
+        display: block;
+        position: relative;
+        background: #1e836c;
+        padding: .75em 2em .75em 3.5em;
+        color: #ffff !important;
+        text-decoration: none;
+        margin: 1.5em 0 0;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        font-weight: 400;
+        border: 0;
+        font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+        text-transform: uppercase
+    }
+    .main-btn {
+        text-align: center;
         font-size: .8em;
         text-align: center;
         display: block;
