@@ -1,4 +1,4 @@
-var express = require('express');
+const express = require('express');
 const crypto = require('crypto');
 const cron = require('node-cron');
 const { Octokit } = require('@octokit/core');
@@ -6,11 +6,8 @@ require('dotenv').config(); // Load environment variables from .env
 
 const router = express.Router();
 
-
 // Initialize Octokit with your GitHub Personal Access Token
-// const octokit = new Octokit({ auth: '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' });
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-
 
 // Function to fetch the current content and SHA of a file in a repository
 async function getFileContentAndSha(owner, repo, path) {
