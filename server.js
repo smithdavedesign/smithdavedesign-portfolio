@@ -3,16 +3,11 @@ const express = require('express');//web framework for node
 const expressLayouts = require('express-ejs-layouts');// ejs view engine
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
+const cronJobRouter = require('./JS/routes/cronjobs'); // Adjust the path as needed
 var multer = require('multer');
 var upload = multer();
 const cors = require('cors')
-const util = require('util');
-const https = require('https');
-const http = require('http');
 const ejs = require('ejs');
-/////////////////////////////////////////////////////////////
-const fs = require('fs');
-/////////////////////////////////////////////////////////////
 
 const app = express();//create instance of express
 
@@ -37,6 +32,7 @@ app.use(express.static("."));
 //routes
 app.use('/', require('./JS/routes/renderRoutes'));
 app.use('/', require('./JS/routes/webServices'));
+app.use('/cronjobs', cronJobRouter);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
