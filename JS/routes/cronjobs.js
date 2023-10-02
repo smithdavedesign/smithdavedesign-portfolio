@@ -86,10 +86,9 @@ cron.schedule('30 14 * * 1-5', async () => {
     const result = await updateReadme(owner, repo, path, message, newContentBase64, fileData.sha);
 
     console.log('README updated successfully.');
-    res.send(result);
   } catch (error) {
     console.error('Error updating README:', error);
-    res.status(error.status || 500).send('Error updating README: ' + error.message);
+    // Handle the error here, you might want to log it or send an alert
   }
 });
 
