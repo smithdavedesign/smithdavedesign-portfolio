@@ -3,10 +3,11 @@
   "description": "a really cool app",
   "version": "1.0.0",
   "engines": {
-    "node": "12.18.2"
+    "node": "v20.6.1"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "heroku": "npm install --dev && npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
