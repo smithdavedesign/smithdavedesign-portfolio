@@ -1940,7 +1940,7 @@ video {
     }
 
     .group:hover .lg\:group-hover\:bg-slate-800\/50 {
-        background-color: rgba(30, 41, 59, .5)
+        background-color: #435A75;
     }
 
     .group\/list:hover .lg\:group-hover\/list\:opacity-50 {
@@ -7781,3 +7781,5 @@ th {
 .social-icons {
     padding-left: 20px;
 }
+
+
