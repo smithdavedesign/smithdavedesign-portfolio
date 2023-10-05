@@ -42,7 +42,7 @@ async function updateReadme(owner, repo, path, message, content, sha) {
     throw error;
   }
 }
-
+/*
 router.get('/updateReadMe', async function (req, res, next) {
   try {
     const owner = 'smithdavedesign'; // GitHub owner (your username)
@@ -67,29 +67,41 @@ router.get('/updateReadMe', async function (req, res, next) {
     res.status(error.status || 500).send('Error updating README: ' + error.message);
   }
 });
-
+*/
+// Schedule the cron job to run at 2:30 PM on weekdays (Monday to Friday)
 cron.schedule('30 14 * * 1-5', async () => {
-  try {
-    const owner = 'smithdavedesign'; // GitHub owner (your username)
-    const repo = 'gitHub-cron-job-app'; // GitHub repository name
-    const path = 'README.md'; // Replace with the path to the README file
-    const message = 'Update README content';
-    const newContent = `### Updated on: ${new Date().toISOString()}`;
+  // Generate a random number between 1 and 4
+  const randomExecutionCount = getRandomInt(1, 5);
 
-    // Fetch the current content and SHA of the README file
-    const fileData = await getFileContentAndSha(owner, repo, path);
+  for (let i = 0; i < randomExecutionCount; i++) {
+    try {
+      const owner = 'smithdavedesign';
+      const repo = 'gitHub-cron-job-app';
+      const path = 'README.md';
+      const message = 'Update README content';
+      const newContent = `### Updated on: ${new Date().toISOString()}`;
 
-    // Encode the new content as Base64
-    const newContentBase64 = Buffer.from(newContent).toString('base64');
+      // Fetch the current content and SHA of the README file
+      const fileData = await getFileContentAndSha(owner, repo, path);
 
-    // Update the README file with the new content and SHA
-    const result = await updateReadme(owner, repo, path, message, newContentBase64, fileData.sha);
+      // Encode the new content as Base64
+      const newContentBase64 = Buffer.from(newContent).toString('base64');
 
-    console.log('README updated successfully.');
-  } catch (error) {
-    console.error('Error updating README:', error);
-    // Handle the error here, you might want to log it or send an alert
+      // Update the README file with the new content and SHA
+      const result = await updateReadme(owner, repo, path, message, newContentBase64, fileData.sha);
+
+      console.log('README updated successfully.');
+    } catch (error) {
+      console.error('Error updating README:', error);
+      // Handle the error here, you might want to log it or send an alert
+    }
   }
 });
+
+
+
+
+
+
 
 module.exports = router;
