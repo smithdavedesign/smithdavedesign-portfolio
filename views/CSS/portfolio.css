@@ -7789,8 +7789,8 @@ th {
 
 .profile-container {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     overflow: hidden;
     background-color: #fff;
@@ -7806,4 +7806,5 @@ th {
   .profile-headlight {
     display: flex;
     justify-content: space-between;
+    height: 50px;
   }
