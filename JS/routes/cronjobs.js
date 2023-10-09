@@ -6,8 +6,10 @@ require('dotenv').config(); // Load environment variables from .env
 
 const router = express.Router();
 
+
 // Initialize Octokit with your GitHub Personal Access Token
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
+
 
 // Function to fetch the current content and SHA of a file in a repository
 async function getFileContentAndSha(owner, repo, path) {
@@ -42,7 +44,7 @@ async function updateReadme(owner, repo, path, message, content, sha) {
     throw error;
   }
 }
-/*
+
 router.get('/updateReadMe', async function (req, res, next) {
   try {
     const owner = 'smithdavedesign'; // GitHub owner (your username)
@@ -67,41 +69,30 @@ router.get('/updateReadMe', async function (req, res, next) {
     res.status(error.status || 500).send('Error updating README: ' + error.message);
   }
 });
-*/
-// Schedule the cron job to run at 2:30 PM on weekdays (Monday to Friday)
+
 cron.schedule('30 14 * * 1-5', async () => {
-  // Generate a random number between 1 and 4
-  const randomExecutionCount = getRandomInt(1, 5);
+  try {
+    const owner = 'smithdavedesign'; // GitHub owner (your username)
+    const repo = 'gitHub-cron-job-app'; // GitHub repository name
+    const path = 'README.md'; // Replace with the path to the README file
+    const message = 'Update README content';
+    const newContent = `### Updated on: ${new Date().toISOString()}`;
 
-  for (let i = 0; i < randomExecutionCount; i++) {
-    try {
-      const owner = 'smithdavedesign';
-      const repo = 'gitHub-cron-job-app';
-      const path = 'README.md';
-      const message = 'Update README content';
-      const newContent = `### Updated on: ${new Date().toISOString()}`;
+    // Fetch the current content and SHA of the README file
+    const fileData = await getFileContentAndSha(owner, repo, path);
 
-      // Fetch the current content and SHA of the README file
-      const fileData = await getFileContentAndSha(owner, repo, path);
+    // Encode the new content as Base64
+    const newContentBase64 = Buffer.from(newContent).toString('base64');
 
-      // Encode the new content as Base64
-      const newContentBase64 = Buffer.from(newContent).toString('base64');
+    // Update the README file with the new content and SHA
+    const result = await updateReadme(owner, repo, path, message, newContentBase64, fileData.sha);
 
-      // Update the README file with the new content and SHA
-      const result = await updateReadme(owner, repo, path, message, newContentBase64, fileData.sha);
-
-      console.log('README updated successfully.');
-    } catch (error) {
-      console.error('Error updating README:', error);
-      // Handle the error here, you might want to log it or send an alert
-    }
+    console.log('README updated successfully.');
+    res.send(result);
+  } catch (error) {
+    console.error('Error updating README:', error);
+    res.status(error.status || 500).send('Error updating README: ' + error.message);
   }
 });
-
-
-
-
-
-
 
 module.exports = router;
