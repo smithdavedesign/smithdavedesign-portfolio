@@ -66,7 +66,6 @@ router.get('/updateReadMe', async function (req, res, next) {
     res.send(result);
   } catch (error) {
     console.error('Error updating README:', error);
-    res.status(error.status || 500).send('Error updating README: ' + error.message);
   }
 });
 
@@ -91,7 +90,6 @@ cron.schedule('30 14 * * 1-5', async () => {
     res.send(result);
   } catch (error) {
     console.error('Error updating README:', error);
-    res.status(error.status || 500).send('Error updating README: ' + error.message);
   }
 });
 
