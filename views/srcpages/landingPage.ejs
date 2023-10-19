@@ -134,7 +134,7 @@
           </header>
           <p>If you have a project that you want to get launched, need help fixing or upgrading a code base, then get in touch with me.</p>
           <p class="btn-hldr">
-            <a data-toggle="modal" data-target="#myModal"class="main-btn">
+            <a onclick="openEmail()" class="main-btn">
               message me <i></i>
             </a>
           </p>
@@ -201,5 +201,9 @@
      
     });
 });
+
+function openEmail() {
+        window.location.href = 'mailto:smithdavedesign@gmail.com';
+    }
       
     </script>
