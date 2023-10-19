@@ -5,26 +5,27 @@ router.get('/', function (req, res) {
     res.render('srcpages/portfolio', { title: 'Portfolio', layout: 'layout-portfolio' }); 
 });
 
-// new portfolio render routes
-// use new layout 
 router.get('/david-smith', function (req, res, next) {
     res.render('srcpages/portfolio', { title: 'Portfolio', layout: 'layout-portfolio' }); 
 });
 
-/*
-router.get('/landingPage', function (req, res, next) {
-    res.render('srcpages/landingPage');
+
+router.get('/v2/', function (req, res, next) {
+    res.render('srcpages/landingPage',{ title: 'PortfolioV2', layout: 'layout' });
+});
+
+router.get('/v2/landingPage', function (req, res, next) {
+    res.render('srcpages/landingPage',{ title: 'PortfolioV2', layout: 'layout' });
 });
 
 
-router.get('/portfolio', function (req, res, next) {
-    res.render('srcpages/work');
+router.get('/v2/portfolio', function (req, res, next) {
+    res.render('srcpages/work',{ title: 'PortfolioV2', layout: 'layout' });
 });
 
-router.get('/bio', function (req, res) {
-    res.render('srcpages/bio');
+router.get('/v2/bio', function (req, res) {
+    res.render('srcpages/bio',{ title: 'PortfolioV2', layout: 'layout' });
 });
-*/
 
 
 module.exports = router;
