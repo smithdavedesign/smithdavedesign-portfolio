@@ -1,0 +1,541 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+/*/////////////EDIT OK AFTER HERE///////////////////////  */
+/*////////////////////My Code////////////////////////////*/
+*{
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+}
+
+main{
+padding-top: 100px;
+
+}
+
+body{
+  background-color: #fff;
+}
+
+header{
+  border-bottom-color: #545454;
+  border-bottom: 2px solid #CDCDCD;
+  background-color: #fff;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  margin:0;
+  padding: 0;
+}
+
+footer{
+  position: fixed;
+  z-index:1;
+
+}
+
+
+/*///////////////////////MOBILE VERSION///////////////////*/
+header .header-brand{
+  background-repeat: no-repeat;
+  font-family: Catamaran;
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: block;
+  color: #111;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header nav ul{
+  display: block;
+  margin: 0 auto; /*move navigation*/
+  width: fit-content;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 40px;
+  padding: 0 16px;
+}
+
+
+header nav ul li a{
+  font-size: 18px;
+  font-family: Catamaran;
+  color: #111;
+  text-transform: uppercase;
+}
+
+header nav p button{
+  font-size: 18px;
+  text-transform: uppercase;
+  list-style: none;
+  display: inline-block;
+  line-height: 40px;
+  width: fit-content;
+  float: left;
+  padding-left: 500px;
+  font-family: Catamaran;
+  color: #111;
+}
+
+
+header .header-cases{
+  display: none;
+}
+.removepic{
+  display: none;
+}
+.removepic img{
+  display: none;
+}
+
+.index-banner{
+  width: 100%;
+  height: calc(100vh - 150px); /*calc does what you think it says*/
+  background-image: url('images/one.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: table;
+
+}
+.vert-center-text{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+.index-banner h2{
+  font-size: 60px;
+  font-family: Catamaran;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  line-height: 70px;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-banner h1{
+  font-size: 28px;
+  font-family: Catamaran Garamond;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  line-height: 40px;
+  font-weight: 100;
+  text-shadow: 2px 2px 8px #111;
+}
+
+.index-links {
+  margin: 16px 16px 0;
+  width: calc(100% - 32px);
+  height: 100px;
+  overflow: hidden;
+  /*dope color schemes*/
+    /* background-color: #eee */
+  background: #ffd89b;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #19547b, #ffd89b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.index-links-wrapper {
+  width: 100%;
+}
+.index-links-wrapper img{
+width: 50%;
+float:left;
+}
+
+.index-links-wrapper form{
+width: 50%;
+float: left;
+top: 10%;
+position: relative;
+line-height: 20px;
+font-weight: 20;
+text-align: center;
+}
+.index-links  h3{
+  font-size: 28px;
+  font-family: Catamaran;
+  color: #111;
+  text-align: center;
+  line-height: 100px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.pictureOfMe{
+  width: 300px;
+  height: 200px;
+  background-image: url(images/Me.jpg);
+  /* background-size: contain; /*contains makes it always fir the container*/ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pictureOfMe:hover{
+  width: 300px;
+  height: 200px;
+  background-image: url(images/Me.jpg);
+  /* background-size: contain; /*contains makes it always fir the container*/ 
+   background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;
+}
+
+#map {
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  height: 90%;
+  width: 90%;
+}
+
+/*Footer*/
+footer{
+  /* width: calc(100% - 32px); */
+  width: calc(100% - 20px);
+  position: relative;
+  bottom: 0;
+  padding: 40px 80px;
+  margin-top: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+footer ul{
+  width: fit-content;
+  float: left;
+  padding-left: 20px;
+}
+footer ul li{
+  display: block;
+  list-style: none;
+}
+footer ul li a{
+  font-family: Catamaran;
+  font-size: 24px;
+  color:#111;
+  line-height: 40px;
+}
+
+.footer-links-casses{
+  display: none;
+}
+
+.footer-icon{
+  width: 60px;
+  float: right;
+}
+.footer-icon img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.tb{
+  float: left;
+  padding-left: 40%;
+  padding-bottom: 5px;
+    font-size: 20px
+}
+.tb i{
+  font-size: 20px;
+}
+
+.aboutMeSection{
+  /* background-image: url(images/tech.jpg); */
+}
+.aboutMeSection img{
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.aboutMeSection form{
+width: 100%;
+}
+
+/*///////////////////END OF MOBILE VERSION/////////////////////////*/
+
+/*////////////////////DESKTOP VERSION//////////////////////*/
+@media only screen and (min-width: 1000px){
+
+  .removepic {
+    display: block;
+  }
+
+  .removepic img{
+    display: block;
+  }
+
+    header .header-brand{
+      background-image: url(images/icons8-home-50.png);
+      margin: 31px 0;
+      text-align: right;
+      line-height: 38px;
+      padding: 0px 40px 0px 70px;
+      border-right: 3px solid #111;
+      float: left;
+    }
+    header nav ul{
+      margin: 0px 0px 0px 20px;
+      line-height: 60px;/*move navigation*/
+      float: left;
+    }
+
+    header nav ul li a{
+      line-height: 100px;
+    }
+
+    header .header-cases{
+      display: block;
+      font-size: 16px;
+      font-family: Catamaran;
+      color: #111;
+      text-transform: uppercase;
+      line-height: 60px;
+      border: 1px solid #111;
+      float: right;
+      margin-right: 40px;
+      margin-top: 20px;
+      padding: 0 20px;
+    }
+  }
+
+
+
+
+@media only screen and (min-width: 1000px){
+  .main-content-wrapper{
+    width: 1000px;
+    margin: 0 auto;
+    }
+  .index-banner{
+    height: 700px; /*calc does what you think it says*/
+    }
+  .index-banner h1{
+    display: block;
+    width: 560px;
+    margin: 0 auto;
+    }
+  .index-links div {
+    width: calc(100% - 32px);
+    margin: 10px 10px 0;
+    height: 230px;
+    float: left;
+    }
+
+.index-square{
+    width: calc(25% - 20px) !important;
+    margin: 10px 10px 0;
+    height: 230px;
+    float: left;
+}
+
+.index-square{
+    width: calc(50% - 20px) !important;
+    margin: 10px 10px 0;
+    height: 230px;
+    float: left;
+  }
+
+  .tb{
+    float: left;
+    padding-left: 50%;
+    padding-bottom: 5px;
+      font-size: 40px
+  }
+  .tb i{
+    font-size: 40px;
+  }
+
+    footer{
+      width: calc(100% - 20px);
+      /* width: calc(100% - 80px); */
+      /* background-image: url(images/map.jpg); */
+      position: relative;
+      float: left;
+      bottom: 0;
+      padding: 40px 40px;
+      margin-top: 20px;
+      overflow: hidden;
+      background-color: white;
+      overflow: hidden;
+    }
+
+    footer ul{
+      width: 100px;
+      float: left;
+      padding-left: 400px;
+    }
+    footer ul li{
+      display: block;
+      list-style: none;
+      padding-left: 0px;
+      float: left;
+      white-space: nowrap;
+    }
+    footer ul li a{
+      text-align: left;
+      font-family: Catamaran;
+      font-size: 24px;
+      color: #111;
+      line-height: 40px;
+      padding-left: 400px;
+      white-space: nowrap;
+    }
+
+
+
+    .footer-icon{
+      width: 60px;
+      float: right;
+    }
+    .footer-icon img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+  .footer-links-casses{
+    display: block;
+  }
+
+  .footer-links-casses li{
+    float: left;
+    display: block;
+    padding-left: 0px;
+  }
+
+  .footer-links-casses li a{
+    float: left;
+    display: block;
+    padding-left: 0px;
+  }
+
+footer ul{
+
+  width: 100px;
+  float: left;
+  padding-left: 20px;
+}
+
+  footer ul li p{
+    font-family: Catamaran;
+    font-size: 24px;
+    color: #111;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+}
+
+
+
+/*////////End of Desktop Version//////////////////////////*/
