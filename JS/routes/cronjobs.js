@@ -87,7 +87,6 @@ router.get("/updateReadMe", async function (req, res, next) {
         );
 
         console.log("README updated successfully.");
-        res.send(result);
       } catch (error) {
         console.error("Error updating README:", error);
       }
@@ -106,6 +105,7 @@ router.get("/updateReadMe", async function (req, res, next) {
   Promise.all(promises)
     .then((results) => {
       console.log("All tasks completed:", results);
+      res.send(results);
     })
     .catch((error) => {
       console.error("Error occurred:", error);
