@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  		<%- include ('./partials/Head') %>
+
+<head>
+	<%- include ('./partials/Head') %>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Outfit:wght@300;400;600&display=swap"
+			rel="stylesheet">
+		<style>
+			html {
+				font-size: 16px !important;
+			}
+
+			body {
+				font-family: 'Outfit', sans-serif;
+				font-size: 16px;
+			}
+
+			.font-serif-elegant {
+				font-family: 'Fraunces', serif;
+			}
+
+			/* Fix Tailwind reset for legacy headings */
+			h1 {
+				font-size: 2.25rem !important;
+				font-weight: 700 !important;
+				margin-bottom: 0.5em;
+			}
+
+			h2 {
+				font-size: 1.875rem !important;
+				font-weight: 600 !important;
+				margin-bottom: 0.5em;
+			}
+
+			h3 {
+				font-size: 1.5rem !important;
+				font-weight: 600 !important;
+				margin-bottom: 0.5em;
+			}
+
+			h4 {
+				font-size: 1.25rem !important;
+				font-weight: 600 !important;
+			}
+		</style>
 		<title>Smith Dave Design</title>
-  </head>
-  <body>
+</head>
+
+<body class="bg-[#faf9f6] text-[#4b2c20]">
 	<%- defineContent('Header') %>
-	<%- body %>
-	<%- defineContent('Footer') %>
-  </body>
+		<%- body %>
+			<%- defineContent('Footer') %>
+				<%- include('./partials/chronos') %>
+</body>
+
 </html>

@@ -1,30 +1,202 @@
-  <header id="home-top" class="nav-top nav-fixed headroom headroom--pinned nav-root headroom--top bg-transparent">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-xs-4" onclick="changeURL()">
-          <img src="/me.png" id="header-logo" href="/v2/landingPage">
+<header id="main-nav" class="fixed top-0 right-12 h-screen z-[9999] flex flex-col justify-center pointer-events-none">
+  <!-- Ultra-Modern Vertical Glass Menu (Visible 768px+) -->
+  <nav
+    class="side-nav-desktop flex flex-col gap-10 px-4 py-12 rounded-full pointer-events-auto items-center bg-white/5 backdrop-blur-2xl border border-white/10 shadow-2xl transition-all duration-700 hover:bg-white/10 hover:border-white/20">
+    <a href="#hero" class="jump-link group relative flex items-center justify-center transition-all duration-500">
+      <!-- Label (Expanded on Hover) -->
+      <span
+        class="jump-label absolute right-14 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[10px] font-bold uppercase tracking-[0.4em] text-[#1e836c] pointer-events-none whitespace-nowrap bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#1e836c]/10">Home</span>
+      <!-- Interaction Dot -->
+      <div class="jump-dot-container relative flex items-center justify-center w-6 h-6">
+        <div
+          class="jump-ring w-6 h-6 rounded-full border border-[#1e836c]/20 group-hover:border-[#1e836c] transition-all duration-500">
         </div>
-        <div class="col-md-8 col-xs-8">
-          <nav id="top-nav">
-            <ul class="nav-list transistion">
-              <li>
-                <a href="/v2/landingPage">Work</a>
-              </li>
-              <li>
-                <a href="/v2/portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="/v2/bio">About Me</a>
-              </li>
-            </ul>
-          </nav>
+        <div
+          class="jump-dot w-2 h-2 rounded-full bg-[#1e836c]/30 group-hover:bg-[#1e836c] transition-all duration-500 absolute">
         </div>
+        <div class="jump-pulse absolute inset-0 rounded-full bg-[#1e836c] opacity-0 pointer-events-none"></div>
       </div>
-    </div>
-  </header>
-  <script>
+    </a>
+    <a href="#capabilities"
+      class="jump-link group relative flex items-center justify-center transition-all duration-500">
+      <span
+        class="jump-label absolute right-14 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[10px] font-bold uppercase tracking-[0.4em] text-[#1e836c] pointer-events-none whitespace-nowrap bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#1e836c]/10">Expertise</span>
+      <div class="jump-dot-container relative flex items-center justify-center w-6 h-6">
+        <div
+          class="jump-ring w-6 h-6 rounded-full border border-[#1e836c]/20 group-hover:border-[#1e836c] transition-all duration-500">
+        </div>
+        <div
+          class="jump-dot w-2 h-2 rounded-full bg-[#1e836c]/30 group-hover:bg-[#1e836c] transition-all duration-500 absolute">
+        </div>
+        <div class="jump-pulse absolute inset-0 rounded-full bg-[#1e836c] opacity-0 pointer-events-none"></div>
+      </div>
+    </a>
+    <a href="#work" class="jump-link group relative flex items-center justify-center transition-all duration-500">
+      <span
+        class="jump-label absolute right-14 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[10px] font-bold uppercase tracking-[0.4em] text-[#1e836c] pointer-events-none whitespace-nowrap bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#1e836c]/10">Work</span>
+      <div class="jump-dot-container relative flex items-center justify-center w-6 h-6">
+        <div
+          class="jump-ring w-6 h-6 rounded-full border border-[#1e836c]/20 group-hover:border-[#1e836c] transition-all duration-500">
+        </div>
+        <div
+          class="jump-dot w-2 h-2 rounded-full bg-[#1e836c]/30 group-hover:bg-[#1e836c] transition-all duration-500 absolute">
+        </div>
+        <div class="jump-pulse absolute inset-0 rounded-full bg-[#1e836c] opacity-0 pointer-events-none"></div>
+      </div>
+    </a>
+    <a href="#bio" class="jump-link group relative flex items-center justify-center transition-all duration-500">
+      <span
+        class="jump-label absolute right-14 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[10px] font-bold uppercase tracking-[0.4em] text-[#1e836c] pointer-events-none whitespace-nowrap bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#1e836c]/10">Bio</span>
+      <div class="jump-dot-container relative flex items-center justify-center w-6 h-6">
+        <div
+          class="jump-ring w-6 h-6 rounded-full border border-[#1e836c]/20 group-hover:border-[#1e836c] transition-all duration-500">
+        </div>
+        <div
+          class="jump-dot w-2 h-2 rounded-full bg-[#1e836c]/30 group-hover:bg-[#1e836c] transition-all duration-500 absolute">
+        </div>
+        <div class="jump-pulse absolute inset-0 rounded-full bg-[#1e836c] opacity-0 pointer-events-none"></div>
+      </div>
+    </a>
+    <a href="#contact" class="jump-link group relative flex items-center justify-center transition-all duration-500">
+      <span
+        class="jump-label absolute right-14 opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-500 text-[10px] font-bold uppercase tracking-[0.4em] text-[#1e836c] pointer-events-none whitespace-nowrap bg-white/80 backdrop-blur-md px-4 py-2 rounded-full shadow-sm border border-[#1e836c]/10">Contact</span>
+      <div class="jump-dot-container relative flex items-center justify-center w-6 h-6">
+        <div
+          class="jump-ring w-6 h-6 rounded-full border border-[#1e836c]/20 group-hover:border-[#1e836c] transition-all duration-500">
+        </div>
+        <div
+          class="jump-dot w-2 h-2 rounded-full bg-[#1e836c]/30 group-hover:bg-[#1e836c] transition-all duration-500 absolute">
+        </div>
+        <div class="jump-pulse absolute inset-0 rounded-full bg-[#1e836c] opacity-0 pointer-events-none"></div>
+      </div>
+    </a>
+  </nav>
 
-function changeURL(){
-  window.location = "https://smithdavedesign.herokuapp.com/v2/"
-}
-  </script>
+  <!-- Mobile Only FAB (Visible below 768px) -->
+  <div class="mobile-button-container md:hidden fixed top-8 right-8 pointer-events-auto">
+    <button id="mobile-trigger"
+      class="w-14 h-14 bg-white/10 backdrop-blur-3xl border border-[#1e836c]/20 text-[#1e836c] rounded-full shadow-2xl flex items-center justify-center active:scale-95 transition-all">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+
+  <!-- Mobile Overlay -->
+  <div id="nav-overlay"
+    class="fixed inset-0 bg-[#faf9f6]/98 backdrop-blur-3xl z-[10000] flex flex-col items-center justify-center gap-12 translate-y-full transition-transform duration-700 pointer-events-auto">
+    <button id="nav-close" class="absolute top-10 right-10 text-[#1e836c]">
+      <i class="fas fa-times text-2xl"></i>
+    </button>
+    <a href="#hero"
+      class="mobile-nav-item text-4xl font-serif-elegant font-bold text-[#4b2c20]/40 hover:text-[#1e836c] transition-all">Home</a>
+    <a href="#capabilities"
+      class="mobile-nav-item text-4xl font-serif-elegant font-bold text-[#4b2c20]/40 hover:text-[#1e836c] transition-all">Capabilities</a>
+    <a href="#work"
+      class="mobile-nav-item text-4xl font-serif-elegant font-bold text-[#4b2c20]/40 hover:text-[#1e836c] transition-all">Portfolio</a>
+    <a href="#bio"
+      class="mobile-nav-item text-4xl font-serif-elegant font-bold text-[#4b2c20]/40 hover:text-[#1e836c] transition-all">Identity</a>
+    <a href="#contact"
+      class="mobile-nav-item text-4xl font-serif-elegant font-bold text-[#4b2c20]/40 hover:text-[#1e836c] transition-all">Hire
+      Me</a>
+  </div>
+</header>
+
+<style>
+  /* Responsive Visibility */
+  .side-nav-desktop {
+    display: none;
+  }
+
+  .mobile-button-container {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    .side-nav-desktop {
+      display: flex;
+    }
+
+    .mobile-button-container {
+      display: none;
+    }
+  }
+
+  /* Jump Links Active States */
+  .jump-link.active .jump-dot {
+    background-color: #1e836c;
+    transform: scale(1.6);
+    opacity: 1;
+  }
+
+  .jump-link.active .jump-ring {
+    border-color: #1e836c;
+    border-width: 2px;
+    transform: scale(1.2);
+  }
+
+  .jump-link.active .jump-pulse {
+    animation: active-pulse 2.5s infinite;
+  }
+
+  @keyframes active-pulse {
+    0% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+
+    100% {
+      transform: scale(3.5);
+      opacity: 0;
+    }
+  }
+
+  #nav-overlay.active {
+    transform: translateY(0);
+  }
+
+  /* Label Custom Scrollbar Shadow Effect */
+  .jump-label {
+    box-shadow: 0 10px 30px -10px rgba(30, 131, 108, 0.2);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Mobile Nav Toggle
+    const trigger = document.getElementById('mobile-trigger');
+    const close = document.getElementById('nav-close');
+    const overlay = document.getElementById('nav-overlay');
+    const items = document.querySelectorAll('.mobile-nav-item');
+
+    trigger?.addEventListener('click', () => overlay.classList.add('active'));
+    close?.addEventListener('click', () => overlay.classList.remove('active'));
+    items.forEach(item => item.addEventListener('click', () => overlay.classList.remove('active')));
+
+    // Intersection Observer (ScrollSpy)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute('id');
+          document.querySelectorAll('.jump-link').forEach(link => {
+            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
+
+    document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+
+    // Smooth Scrolling
+    document.querySelectorAll('.jump-link, .mobile-nav-item').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const id = link.getAttribute('href');
+        if (id.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(id);
+          if (target) {
+            window.scrollTo({ top: target.offsetTop, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+  });
+</script>

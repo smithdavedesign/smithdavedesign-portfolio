@@ -1,21 +1,21 @@
-.contactFormClass input{
-        position: relative;
-        display: block;
-        width: 100%;
-        background: #fff;
-        border-radius: 31px;
-        font-family: Ubuntu-Bold;
-        font-size: 18px;
-        color: #8f8fa1;
-        line-height: 1.2;
-        outline: none;
-        border: none;   
+.contactFormClass input {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: #fff;
+    border-radius: 31px;
+    font-family: Ubuntu-Bold;
+    font-size: 18px;
+    color: #8f8fa1;
+    line-height: 1.2;
+    outline: none;
+    border: none;
 }
 
 dl dt {
     display: inline-block;
     margin-right: 30px;
-    }
+}
 
 .focus-input100 {
     display: block;
@@ -45,7 +45,8 @@ dl dt {
 .biobuttons {
     color: #7d4627;
 }
-.techIcons a i{
+
+.techIcons a i {
     list-style: none;
     font-size: 30px;
     width: 50px;
@@ -56,9 +57,10 @@ dl dt {
 
 }
 
-footer p{
-    color:#ffff;
+footer p {
+    color: #ffff;
 }
+
 .svgPictures {
     height: 25px;
 }
@@ -67,17 +69,18 @@ footer p{
 
 .modal {
     text-align: center;
-    padding: 0!important;
-  }
-  
-  .modal:before {
+    padding: 0 !important;
+}
+
+.modal:before {
     content: '';
     display: inline-block;
     height: 100%;
     vertical-align: middle;
-    margin-right: -4px; /* Adjusts for spacing */
-  }
-  
+    margin-right: -4px;
+    /* Adjusts for spacing */
+}
+
 .modal-dialog {
     display: inline-block;
     text-align: left;
@@ -88,8 +91,8 @@ footer p{
     -ms-transform: translate(0, -50%) !important;
     -webkit-transform: translate(0, -50%) !important;
     margin: auto 5%;
-    width: 100%!important;
-    height: 100%!important;
+    width: 100% !important;
+    height: 100% !important;
 }
 
 
@@ -97,8 +100,9 @@ footer p{
     left: 0;
     right: 0;
     overflow-y: auto;
-   
+
 }
+
 .modal-content {
     background: #c5ded7;
 }
@@ -119,9 +123,9 @@ a.logo {
     padding: 20px 30px;
 }
 
-    a.logo:hover {
-        cursor: pointer;
-    }
+a.logo:hover {
+    cursor: pointer;
+}
 
 
 .js nav[role=navigation] {
@@ -139,10 +143,10 @@ a.logo {
     padding: 50px 0;
 }
 
-    .type-text span {
-        font-size: 3em;
-        font-weight: 900;
-    }
+.type-text span {
+    font-size: 3em;
+    font-weight: 900;
+}
 
 /* PORTFOLIO GRID */
 .projects {
@@ -158,16 +162,16 @@ a.logo {
     margin: 0 auto;
 }
 
-    .projects .item {
-        background-image: url('https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052');
-        background-size: cover;
-        background-position: center center;
-        min-height: 400px;
-        min-width: 400px;
-    }
+.projects .item {
+    background-image: url('https://images.unsplash.com/photo-1431578500526-4d9613015464?q=80&fm=jpg&s=169b4f4e6f3882a03b6b93b2e6848052');
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    min-width: 400px;
+}
 
 .item-info {
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     display: -webkit-flex;
     flex-direction: column;
@@ -182,18 +186,18 @@ a.logo {
     min-height: 400px;
 }
 
-    .item-info h2 {
-        font-weight: 900;
-        color: #ffffff;
-    }
+.item-info h2 {
+    font-weight: 900;
+    color: #ffffff;
+}
 
-    .item-info span {
-        color: #cfcfcf;
-        font-family: Arial;
-        font-style: italic;
-        font-size: 0.9em;
-        padding-top: 5px;
-    }
+.item-info span {
+    color: #cfcfcf;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 0.9em;
+    padding-top: 5px;
+}
 
 
 /*//////////////////////////////////////////////*/
@@ -220,11 +224,13 @@ p {
     font-weight: normal;
     font-style: normal;
 }
+
 h1 h2 h3 h4 h5 {
     font-family: 'Lora';
     font-weight: normal;
     font-style: normal;
 }
+
 .w3-center {
     text-align: center !important;
 }
@@ -233,16 +239,21 @@ h1 h2 h3 h4 h5 {
     max-width: 980px;
 }
 
-.w3-content, .w3-auto {
+.w3-content,
+.w3-auto {
     margin-left: auto;
     margin-right: auto;
 }
 
-.w3-tooltip, .w3-display-container {
+.w3-tooltip,
+.w3-display-container {
     position: relative;
 }
 
-.w3-text-light-grey, .w3-hover-text-light-grey:hover, .w3-text-light-gray, .w3-hover-text-light-gray:hover {
+.w3-text-light-grey,
+.w3-hover-text-light-grey:hover,
+.w3-text-light-gray,
+.w3-hover-text-light-gray:hover {
     color: #f1f1f1 !important;
 }
 
@@ -251,7 +262,7 @@ h1 h2 h3 h4 h5 {
 }
 
 .w3-border {
-   /*border: 1px solid #ccc !important;*/
+    /*border: 1px solid #ccc !important;*/
 }
 
 
@@ -261,7 +272,18 @@ h1 h2 h3 h4 h5 {
 
 
 
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
     display: block;
 }
 
@@ -269,13 +291,13 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    height:100%
+    height: 100%
 }
 
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
-    height:100%
+    height: 100%
 }
 
 a {
@@ -283,7 +305,8 @@ a {
     transition: all .3s ease-in-out
 }
 
-a:active, a:hover {
+a:active,
+a:hover {
     outline: 0
 }
 
@@ -292,11 +315,16 @@ h1 {
     margin: .67em 0
 }
 
-b, strong {
+b,
+strong {
     font-weight: 700
 }
-code, kbd, pre, samp {
-    font-family: monospace,serif;
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
     font-size: 1em
 }
 
@@ -312,7 +340,8 @@ small {
     font-size: 80%
 }
 
-sub, sup {
+sub,
+sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
@@ -350,30 +379,40 @@ legend {
     padding: 0
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
     font-family: inherit;
     font-size: 100%;
     margin: 0
 }
 
-button, input {
+button,
+input {
     line-height: normal
 }
 
-button, select {
+button,
+select {
     text-transform: none
 }
 
-button, html input[type=button], input[type=reset], input[type=submit] {
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
     -webkit-appearance: button;
     cursor: pointer
 }
 
-    button[disabled], html input[disabled] {
-        cursor: default
-    }
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
 
-input[type=checkbox], input[type=radio] {
+input[type=checkbox],
+input[type=radio] {
     box-sizing: border-box;
     padding: 0
 }
@@ -385,11 +424,13 @@ input[type=search] {
     box-sizing: content-box
 }
 
-    input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
-        -webkit-appearance: none
-    }
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
     border: 0;
     padding: 0
 }
@@ -412,23 +453,27 @@ table {
         box-shadow: none !important
     }
 
-    a, a:visited {
+    a,
+    a:visited {
         text-decoration: underline
     }
 
-        a[href]:after {
-            content: " (" attr(href) ")"
-        }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
 
     abbr[title]:after {
         content: " (" attr(title) ")"
     }
 
-    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
         content: ""
     }
 
-    pre, blockquote {
+    pre,
+    blockquote {
         border: 1px solid #999;
         page-break-inside: avoid
     }
@@ -437,7 +482,8 @@ table {
         display: table-header-group
     }
 
-    tr, img {
+    tr,
+    img {
         page-break-inside: avoid
     }
 
@@ -449,12 +495,15 @@ table {
         margin: 2cm .5cm
     }
 
-    p, h2, h3 {
+    p,
+    h2,
+    h3 {
         orphans: 3;
         widows: 3
     }
 
-    h2, h3 {
+    h2,
+    h3 {
         page-break-after: avoid
     }
 
@@ -462,11 +511,13 @@ table {
         display: none
     }
 
-    .table td, .table th {
+    .table td,
+    .table th {
         background-color: #fff !important
     }
 
-    .btn > .caret, .dropup > .btn > .caret {
+    .btn>.caret,
+    .dropup>.btn>.caret {
         border-top-color: #000 !important
     }
 
@@ -478,12 +529,15 @@ table {
         border-collapse: collapse !important
     }
 
-    .table-bordered th, .table-bordered td {
+    .table-bordered th,
+    .table-bordered td {
         border: 1px solid #ddd !important
     }
 }
 
-*, :before, :after {
+*,
+:before,
+:after {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box
@@ -491,42 +545,49 @@ table {
 
 html {
     font-size: 62.5%;
-    -webkit-tap-highlight-color: rgba(0,0,0,0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 body {
-    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
     font-size: 14px;
     line-height: 1.42857143;
     color: #545454;
     background-color: #fff
 }
 
-input, button, select, textarea {
+input,
+button,
+select,
+textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit
 }
 
-    button, input, select[multiple], textarea {
-        background-image: none
-    }
+button,
+input,
+select[multiple],
+textarea {
+    background-image: none
+}
 
 a {
     color: #e0ebe8;
     text-decoration: none
 }
 
-    a:hover, a:focus {
-        color: #b2cdc5;
-        text-decoration: underline
-    }
+a:hover,
+a:focus {
+    color: #b2cdc5;
+    text-decoration: underline
+}
 
-    a:focus {
-        outline: thin dotted #333;
-        outline: 5px auto -webkit-focus-ring-color;
-        outline-offset: -2px
-    }
+a:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
 
 img {
     vertical-align: middle
@@ -640,61 +701,98 @@ cite {
     text-align: center
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
     font-family: 'Lora';
     font-weight: 500;
     line-height: 1.1
 }
 
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small,
+.h1 small,
+.h2 small,
+.h3 small,
+.h4 small,
+.h5 small,
+.h6 small {
     font-weight: 400;
     line-height: 1;
     color: #999
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin-top: 20px;
     margin-bottom: 10px
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
     margin-top: 10px;
     margin-bottom: 10px
 }
 
-h1, .h1 {
+h1,
+.h1 {
     font-size: 36px
 }
 
-h2, .h2 {
+h2,
+.h2 {
     font-size: 30px
 }
 
-h3, .h3 {
+h3,
+.h3 {
     font-size: 24px
 }
 
-h4, .h4 {
+h4,
+.h4 {
     font-size: 18px
 }
 
-h5, .h5 {
+h5,
+.h5 {
     font-size: 14px
 }
 
-h6, .h6 {
+h6,
+.h6 {
     font-size: 12px
 }
 
-h1 small, .h1 small {
+h1 small,
+.h1 small {
     font-size: 24px
 }
 
-h2 small, .h2 small {
+h2 small,
+.h2 small {
     font-size: 18px
 }
 
-h3 small, .h3 small, h4 small, .h4 small {
+h3 small,
+.h3 small,
+h4 small,
+.h4 small {
     font-size: 14px
 }
 
@@ -704,14 +802,18 @@ h3 small, .h3 small, h4 small, .h4 small {
     border-bottom: 1px solid #eee
 }
 
-ul, ol {
+ul,
+ol {
     margin-top: 0;
     margin-bottom: 10px
 }
 
-    ul ul, ol ul, ul ol, ol ol {
-        margin-bottom: 0
-    }
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin-bottom: 0
+}
 
 .list-unstyled {
     padding-left: 0;
@@ -723,17 +825,18 @@ ul, ol {
     list-style: none
 }
 
-    .list-inline > li {
-        display: inline-block;
-        padding-left: 5px;
-        padding-right: 5px
-    }
+.list-inline>li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px
+}
 
 dl {
     margin-bottom: 20px
 }
 
-dt, dd {
+dt,
+dd {
     line-height: 1.42857143
 }
 
@@ -760,26 +863,29 @@ dd {
         margin-left: 180px
     }
 
-        .dl-horizontal dd:before, .dl-horizontal dd:after {
-            content: " ";
-            display: table
-        }
+    .dl-horizontal dd:before,
+    .dl-horizontal dd:after {
+        content: " ";
+        display: table
+    }
 
-        .dl-horizontal dd:after {
-            clear: both
-        }
+    .dl-horizontal dd:after {
+        clear: both
+    }
 
-        .dl-horizontal dd:before, .dl-horizontal dd:after {
-            content: " ";
-            display: table
-        }
+    .dl-horizontal dd:before,
+    .dl-horizontal dd:after {
+        content: " ";
+        display: table
+    }
 
-        .dl-horizontal dd:after {
-            clear: both
-        }
+    .dl-horizontal dd:after {
+        clear: both
+    }
 }
 
-abbr[title], abbr[data-original-title] {
+abbr[title],
+abbr[data-original-title] {
     cursor: help;
     border-bottom: 1px dotted #999
 }
@@ -795,48 +901,52 @@ blockquote {
     border-left: 5px solid #eee
 }
 
-    blockquote p {
-        font-size: 17.5px;
-        font-weight: 300;
-        line-height: 1.25
-    }
+blockquote p {
+    font-size: 17.5px;
+    font-weight: 300;
+    line-height: 1.25
+}
 
-        blockquote p:last-child {
-            margin-bottom: 0
-        }
+blockquote p:last-child {
+    margin-bottom: 0
+}
 
-    blockquote small {
-        display: block;
-        line-height: 1.42857143;
-        color: #999
-    }
+blockquote small {
+    display: block;
+    line-height: 1.42857143;
+    color: #999
+}
 
-        blockquote small:before {
-            content: '\2014 \00A0'
-        }
+blockquote small:before {
+    content: '\2014 \00A0'
+}
 
-    blockquote.pull-right {
-        padding-right: 15px;
-        padding-left: 0;
-        border-right: 5px solid #eee;
-        border-left: 0
-    }
+blockquote.pull-right {
+    padding-right: 15px;
+    padding-left: 0;
+    border-right: 5px solid #eee;
+    border-left: 0
+}
 
-        blockquote.pull-right p, blockquote.pull-right small {
-            text-align: right
-        }
+blockquote.pull-right p,
+blockquote.pull-right small {
+    text-align: right
+}
 
-            blockquote.pull-right small:before {
-                content: ''
-            }
+blockquote.pull-right small:before {
+    content: ''
+}
 
-            blockquote.pull-right small:after {
-                content: '\00A0 \2014'
-            }
+blockquote.pull-right small:after {
+    content: '\00A0 \2014'
+}
 
-    q:before, q:after, blockquote:before, blockquote:after {
-        content: ""
-    }
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: ""
+}
 
 address {
     display: block;
@@ -845,8 +955,9 @@ address {
     line-height: 1.42857143
 }
 
-code, pre {
-    font-family: Monaco,Menlo,Consolas,"Courier New",monospace
+code,
+pre {
+    font-family: Monaco, Menlo, Consolas, "Courier New", monospace
 }
 
 code {
@@ -872,18 +983,18 @@ pre {
     border-radius: 4px
 }
 
-    pre.prettyprint {
-        margin-bottom: 20px
-    }
+pre.prettyprint {
+    margin-bottom: 20px
+}
 
-    pre code {
-        padding: 0;
-        font-size: inherit;
-        color: inherit;
-        white-space: pre-wrap;
-        background-color: transparent;
-        border: 0
-    }
+pre code {
+    padding: 0;
+    font-size: inherit;
+    color: inherit;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0
+}
 
 .pre-scrollable {
     max-height: 340px;
@@ -897,56 +1008,117 @@ pre {
     padding-right: 15px
 }
 
-    .container:before, .container:after {
-        content: " ";
-        display: table
-    }
+.container:before,
+.container:after {
+    content: " ";
+    display: table
+}
 
-    .container:after {
-        clear: both
-    }
+.container:after {
+    clear: both
+}
 
-    .container:before, .container:after {
-        content: " ";
-        display: table
-    }
+.container:before,
+.container:after {
+    content: " ";
+    display: table
+}
 
-    .container:after {
-        clear: both
-    }
+.container:after {
+    clear: both
+}
 
 .row {
     margin-left: -15px;
     margin-right: -15px
 }
 
-    .row:before, .row:after {
-        content: " ";
-        display: table
-    }
+.row:before,
+.row:after {
+    content: " ";
+    display: table
+}
 
-    .row:after {
-        clear: both
-    }
+.row:after {
+    clear: both
+}
 
-    .row:before, .row:after {
-        content: " ";
-        display: table
-    }
+.row:before,
+.row:after {
+    content: " ";
+    display: table
+}
 
-    .row:after {
-        clear: both
-    }
+.row:after {
+    clear: both
+}
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12,
+.col-sm-1,
+.col-sm-2,
+.col-sm-3,
+.col-sm-4,
+.col-sm-5,
+.col-sm-6,
+.col-sm-7,
+.col-sm-8,
+.col-sm-9,
+.col-sm-10,
+.col-sm-11,
+.col-sm-12,
+.col-md-1,
+.col-md-2,
+.col-md-3,
+.col-md-4,
+.col-md-5,
+.col-md-6,
+.col-md-7,
+.col-md-8,
+.col-md-9,
+.col-md-10,
+.col-md-11,
+.col-md-12,
+.col-lg-1,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12 {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    
+
 }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11 {
     float: left
 }
 
@@ -1003,7 +1175,17 @@ pre {
         max-width: 750px
     }
 
-    .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11 {
+    .col-sm-1,
+    .col-sm-2,
+    .col-sm-3,
+    .col-sm-4,
+    .col-sm-5,
+    .col-sm-6,
+    .col-sm-7,
+    .col-sm-8,
+    .col-sm-9,
+    .col-sm-10,
+    .col-sm-11 {
         float: left
     }
 
@@ -1193,7 +1375,17 @@ pre {
         max-width: 970px
     }
 
-    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11 {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11 {
         float: left
     }
 
@@ -1395,7 +1587,17 @@ pre {
         max-width: 970px
     }
 
-    .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11 {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11 {
         float: left
     }
 
@@ -1606,31 +1808,46 @@ th {
     margin-bottom: 20px
 }
 
-    .table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
-        padding: 8px;
-        line-height: 1.42857143;
-        vertical-align: top;
-        border-top: 1px solid #ddd
-    }
+.table thead>tr>th,
+.table tbody>tr>th,
+.table tfoot>tr>th,
+.table thead>tr>td,
+.table tbody>tr>td,
+.table tfoot>tr>td {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd
+}
 
-    .table thead > tr > th {
-        vertical-align: bottom;
-        border-bottom: 2px solid #ddd
-    }
+.table thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #ddd
+}
 
-    .table caption + thead tr:first-child th, .table colgroup + thead tr:first-child th, .table thead:first-child tr:first-child th, .table caption + thead tr:first-child td, .table colgroup + thead tr:first-child td, .table thead:first-child tr:first-child td {
-        border-top: 0
-    }
+.table caption+thead tr:first-child th,
+.table colgroup+thead tr:first-child th,
+.table thead:first-child tr:first-child th,
+.table caption+thead tr:first-child td,
+.table colgroup+thead tr:first-child td,
+.table thead:first-child tr:first-child td {
+    border-top: 0
+}
 
-    .table tbody + tbody {
-        border-top: 2px solid #ddd
-    }
+.table tbody+tbody {
+    border-top: 2px solid #ddd
+}
 
-    .table .table {
-        background-color: #fff
-    }
+.table .table {
+    background-color: #fff
+}
 
-.table-condensed thead > tr > th, .table-condensed tbody > tr > th, .table-condensed tfoot > tr > th, .table-condensed thead > tr > td, .table-condensed tbody > tr > td, .table-condensed tfoot > tr > td {
+.table-condensed thead>tr>th,
+.table-condensed tbody>tr>th,
+.table-condensed tfoot>tr>th,
+.table-condensed thead>tr>td,
+.table-condensed tbody>tr>td,
+.table-condensed tfoot>tr>td {
     padding: 5px
 }
 
@@ -1638,19 +1855,27 @@ th {
     border: 1px solid #ddd
 }
 
-    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
-        border: 1px solid #ddd
-    }
+.table-bordered>thead>tr>th,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>td {
+    border: 1px solid #ddd
+}
 
-    .table-bordered > thead > tr > th, .table-bordered > thead > tr > td {
-        border-bottom-width: 2px
-    }
+.table-bordered>thead>tr>th,
+.table-bordered>thead>tr>td {
+    border-bottom-width: 2px
+}
 
-.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
     background-color: #f9f9f9
 }
 
-.table-hover > tbody > tr:hover > td, .table-hover > tbody > tr:hover > th {
+.table-hover>tbody>tr:hover>td,
+.table-hover>tbody>tr:hover>th {
     background-color: #f5f5f5
 }
 
@@ -1659,41 +1884,92 @@ table col[class*=col-] {
     display: table-column
 }
 
-table td[class*=col-], table th[class*=col-] {
+table td[class*=col-],
+table th[class*=col-] {
     float: none;
     display: table-cell
 }
 
-.table > thead > tr > td.active, .table > tbody > tr > td.active, .table > tfoot > tr > td.active, .table > thead > tr > th.active, .table > tbody > tr > th.active, .table > tfoot > tr > th.active, .table > thead > tr.active > td, .table > tbody > tr.active > td, .table > tfoot > tr.active > td, .table > thead > tr.active > th, .table > tbody > tr.active > th, .table > tfoot > tr.active > th {
+.table>thead>tr>td.active,
+.table>tbody>tr>td.active,
+.table>tfoot>tr>td.active,
+.table>thead>tr>th.active,
+.table>tbody>tr>th.active,
+.table>tfoot>tr>th.active,
+.table>thead>tr.active>td,
+.table>tbody>tr.active>td,
+.table>tfoot>tr.active>td,
+.table>thead>tr.active>th,
+.table>tbody>tr.active>th,
+.table>tfoot>tr.active>th {
     background-color: #f5f5f5
 }
 
-.table > thead > tr > td.success, .table > tbody > tr > td.success, .table > tfoot > tr > td.success, .table > thead > tr > th.success, .table > tbody > tr > th.success, .table > tfoot > tr > th.success, .table > thead > tr.success > td, .table > tbody > tr.success > td, .table > tfoot > tr.success > td, .table > thead > tr.success > th, .table > tbody > tr.success > th, .table > tfoot > tr.success > th {
+.table>thead>tr>td.success,
+.table>tbody>tr>td.success,
+.table>tfoot>tr>td.success,
+.table>thead>tr>th.success,
+.table>tbody>tr>th.success,
+.table>tfoot>tr>th.success,
+.table>thead>tr.success>td,
+.table>tbody>tr.success>td,
+.table>tfoot>tr.success>td,
+.table>thead>tr.success>th,
+.table>tbody>tr.success>th,
+.table>tfoot>tr.success>th {
     background-color: #dff0d8;
     border-color: #d6e9c6
 }
 
-.table-hover > tbody > tr > td.success:hover, .table-hover > tbody > tr > th.success:hover, .table-hover > tbody > tr.success:hover > td {
+.table-hover>tbody>tr>td.success:hover,
+.table-hover>tbody>tr>th.success:hover,
+.table-hover>tbody>tr.success:hover>td {
     background-color: #d0e9c6;
     border-color: #c9e2b3
 }
 
-.table > thead > tr > td.danger, .table > tbody > tr > td.danger, .table > tfoot > tr > td.danger, .table > thead > tr > th.danger, .table > tbody > tr > th.danger, .table > tfoot > tr > th.danger, .table > thead > tr.danger > td, .table > tbody > tr.danger > td, .table > tfoot > tr.danger > td, .table > thead > tr.danger > th, .table > tbody > tr.danger > th, .table > tfoot > tr.danger > th {
+.table>thead>tr>td.danger,
+.table>tbody>tr>td.danger,
+.table>tfoot>tr>td.danger,
+.table>thead>tr>th.danger,
+.table>tbody>tr>th.danger,
+.table>tfoot>tr>th.danger,
+.table>thead>tr.danger>td,
+.table>tbody>tr.danger>td,
+.table>tfoot>tr.danger>td,
+.table>thead>tr.danger>th,
+.table>tbody>tr.danger>th,
+.table>tfoot>tr.danger>th {
     background-color: #f2dede;
     border-color: #eed3d7
 }
 
-.table-hover > tbody > tr > td.danger:hover, .table-hover > tbody > tr > th.danger:hover, .table-hover > tbody > tr.danger:hover > td {
+.table-hover>tbody>tr>td.danger:hover,
+.table-hover>tbody>tr>th.danger:hover,
+.table-hover>tbody>tr.danger:hover>td {
     background-color: #ebcccc;
     border-color: #e6c1c7
 }
 
-.table > thead > tr > td.warning, .table > tbody > tr > td.warning, .table > tfoot > tr > td.warning, .table > thead > tr > th.warning, .table > tbody > tr > th.warning, .table > tfoot > tr > th.warning, .table > thead > tr.warning > td, .table > tbody > tr.warning > td, .table > tfoot > tr.warning > td, .table > thead > tr.warning > th, .table > tbody > tr.warning > th, .table > tfoot > tr.warning > th {
+.table>thead>tr>td.warning,
+.table>tbody>tr>td.warning,
+.table>tfoot>tr>td.warning,
+.table>thead>tr>th.warning,
+.table>tbody>tr>th.warning,
+.table>tfoot>tr>th.warning,
+.table>thead>tr.warning>td,
+.table>tbody>tr.warning>td,
+.table>tfoot>tr.warning>td,
+.table>thead>tr.warning>th,
+.table>tbody>tr.warning>th,
+.table>tfoot>tr.warning>th {
     background-color: #fcf8e3;
     border-color: #fbeed5
 }
 
-.table-hover > tbody > tr > td.warning:hover, .table-hover > tbody > tr > th.warning:hover, .table-hover > tbody > tr.warning:hover > td {
+.table-hover>tbody>tr>td.warning:hover,
+.table-hover>tbody>tr>th.warning:hover,
+.table-hover>tbody>tr.warning:hover>td {
     background-color: #faf2cc;
     border-color: #f8e5be
 }
@@ -1707,30 +1983,50 @@ table td[class*=col-], table th[class*=col-] {
         border: 1px solid #ddd
     }
 
-        .table-responsive > .table {
-            margin-bottom: 0;
-            background-color: #fff
-        }
+    .table-responsive>.table {
+        margin-bottom: 0;
+        background-color: #fff
+    }
 
-            .table-responsive > .table > thead > tr > th, .table-responsive > .table > tbody > tr > th, .table-responsive > .table > tfoot > tr > th, .table-responsive > .table > thead > tr > td, .table-responsive > .table > tbody > tr > td, .table-responsive > .table > tfoot > tr > td {
-                white-space: nowrap
-            }
+    .table-responsive>.table>thead>tr>th,
+    .table-responsive>.table>tbody>tr>th,
+    .table-responsive>.table>tfoot>tr>th,
+    .table-responsive>.table>thead>tr>td,
+    .table-responsive>.table>tbody>tr>td,
+    .table-responsive>.table>tfoot>tr>td {
+        white-space: nowrap
+    }
 
-        .table-responsive > .table-bordered {
-            border: 0
-        }
+    .table-responsive>.table-bordered {
+        border: 0
+    }
 
-            .table-responsive > .table-bordered > thead > tr > th:first-child, .table-responsive > .table-bordered > tbody > tr > th:first-child, .table-responsive > .table-bordered > tfoot > tr > th:first-child, .table-responsive > .table-bordered > thead > tr > td:first-child, .table-responsive > .table-bordered > tbody > tr > td:first-child, .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-                border-left: 0
-            }
+    .table-responsive>.table-bordered>thead>tr>th:first-child,
+    .table-responsive>.table-bordered>tbody>tr>th:first-child,
+    .table-responsive>.table-bordered>tfoot>tr>th:first-child,
+    .table-responsive>.table-bordered>thead>tr>td:first-child,
+    .table-responsive>.table-bordered>tbody>tr>td:first-child,
+    .table-responsive>.table-bordered>tfoot>tr>td:first-child {
+        border-left: 0
+    }
 
-            .table-responsive > .table-bordered > thead > tr > th:last-child, .table-responsive > .table-bordered > tbody > tr > th:last-child, .table-responsive > .table-bordered > tfoot > tr > th:last-child, .table-responsive > .table-bordered > thead > tr > td:last-child, .table-responsive > .table-bordered > tbody > tr > td:last-child, .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-                border-right: 0
-            }
+    .table-responsive>.table-bordered>thead>tr>th:last-child,
+    .table-responsive>.table-bordered>tbody>tr>th:last-child,
+    .table-responsive>.table-bordered>tfoot>tr>th:last-child,
+    .table-responsive>.table-bordered>thead>tr>td:last-child,
+    .table-responsive>.table-bordered>tbody>tr>td:last-child,
+    .table-responsive>.table-bordered>tfoot>tr>td:last-child {
+        border-right: 0
+    }
 
-            .table-responsive > .table-bordered > thead > tr:last-child > th, .table-responsive > .table-bordered > tbody > tr:last-child > th, .table-responsive > .table-bordered > tfoot > tr:last-child > th, .table-responsive > .table-bordered > thead > tr:last-child > td, .table-responsive > .table-bordered > tbody > tr:last-child > td, .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-                border-bottom: 0
-            }
+    .table-responsive>.table-bordered>thead>tr:last-child>th,
+    .table-responsive>.table-bordered>tbody>tr:last-child>th,
+    .table-responsive>.table-bordered>tfoot>tr:last-child>th,
+    .table-responsive>.table-bordered>thead>tr:last-child>td,
+    .table-responsive>.table-bordered>tbody>tr:last-child>td,
+    .table-responsive>.table-bordered>tfoot>tr:last-child>td {
+        border-bottom: 0
+    }
 }
 
 fieldset {
@@ -1778,32 +2074,36 @@ label {
     user-select: none
 }
 
-    .btn:focus {
-        outline: thin dotted #333;
-        outline: 5px auto -webkit-focus-ring-color;
-        outline-offset: -2px
-    }
+.btn:focus {
+    outline: thin dotted #333;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
 
-    .btn:hover, .btn:focus {
-        color: #333;
-        text-decoration: none
-    }
+.btn:hover,
+.btn:focus {
+    color: #333;
+    text-decoration: none
+}
 
-    .btn:active, .btn.active {
-        outline: 0;
-        background-image: none;
-        -webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
-        box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
-    }
+.btn:active,
+.btn.active {
+    outline: 0;
+    background-image: none;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+}
 
-    .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
-        cursor: not-allowed;
-        pointer-events: none;
-        opacity: .65;
-        filter: alpha(opacity=65);
-        -webkit-box-shadow: none;
-        box-shadow: none
-    }
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
 
 .btn-default {
     color: #333;
@@ -1811,20 +2111,40 @@ label {
     border-color: #ccc
 }
 
-    .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-        color: #333;
-        background-color: #ebebeb;
-        border-color: #adadad
-    }
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    color: #333;
+    background-color: #ebebeb;
+    border-color: #adadad
+}
 
-    .btn-default:active, .btn-default.active, .open .dropdown-toggle.btn-default {
-        background-image: none
-    }
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+    background-image: none
+}
 
-    .btn-default.disabled, .btn-default[disabled], fieldset[disabled] .btn-default, .btn-default.disabled:hover, .btn-default[disabled]:hover, fieldset[disabled] .btn-default:hover, .btn-default.disabled:focus, .btn-default[disabled]:focus, fieldset[disabled] .btn-default:focus, .btn-default.disabled:active, .btn-default[disabled]:active, fieldset[disabled] .btn-default:active, .btn-default.disabled.active, .btn-default[disabled].active, fieldset[disabled] .btn-default.active {
-        background-color: #fff;
-        border-color: #ccc
-    }
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    background-color: #fff;
+    border-color: #ccc
+}
 
 .btn-primary {
     color: #fff;
@@ -1832,20 +2152,40 @@ label {
     border-color: #d0e1dd
 }
 
-    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-        color: #fff;
-        background-color: #c7dbd6;
-        border-color: #abc9c1
-    }
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #c7dbd6;
+    border-color: #abc9c1
+}
 
-    .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
-        background-image: none
-    }
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+    background-image: none
+}
 
-    .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
-        background-color: #e0ebe8;
-        border-color: #d0e1dd
-    }
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    background-color: #e0ebe8;
+    border-color: #d0e1dd
+}
 
 
 .btn-link {
@@ -1855,26 +2195,36 @@ label {
     border-radius: 0
 }
 
-    .btn-link, .btn-link:active, .btn-link[disabled], fieldset[disabled] .btn-link {
-        background-color: transparent;
-        -webkit-box-shadow: none;
-        box-shadow: none
-    }
+.btn-link,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
 
-        .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
-            border-color: transparent
-        }
+.btn-link,
+.btn-link:hover,
+.btn-link:focus,
+.btn-link:active {
+    border-color: transparent
+}
 
-            .btn-link:hover, .btn-link:focus {
-                color: #b2cdc5;
-                text-decoration: underline;
-                background-color: transparent
-            }
+.btn-link:hover,
+.btn-link:focus {
+    color: #b2cdc5;
+    text-decoration: underline;
+    background-color: transparent
+}
 
-            .btn-link[disabled]:hover, fieldset[disabled] .btn-link:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:focus {
-                color: #999;
-                text-decoration: none
-            }
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:hover,
+.btn-link[disabled]:focus,
+fieldset[disabled] .btn-link:focus {
+    color: #999;
+    text-decoration: none
+}
 
 .btn-lg {
     padding: 10px 16px;
@@ -1883,7 +2233,8 @@ label {
     border-radius: 6px
 }
 
-.btn-sm, .btn-xs {
+.btn-sm,
+.btn-xs {
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
@@ -1901,11 +2252,13 @@ label {
     padding-right: 0
 }
 
-    .btn-block + .btn-block {
-        margin-top: 5px
-    }
+.btn-block+.btn-block {
+    margin-top: 5px
+}
 
-input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].btn-block {
+input[type=submit].btn-block,
+input[type=reset].btn-block,
+input[type=button].btn-block {
     width: 100%
 }
 
@@ -1915,17 +2268,17 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     transition: opacity .15s linear
 }
 
-    .fade.in {
-        opacity: 1
-    }
+.fade.in {
+    opacity: 1
+}
 
 .collapse {
     display: none
 }
 
-    .collapse.in {
-        display: block
-    }
+.collapse.in {
+    display: block
+}
 
 .collapsing {
     position: relative;
@@ -1937,9 +2290,11 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 
 
 
-    body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
-        margin-right: 15px
-    }
+body.modal-open,
+.modal-open .navbar-fixed-top,
+.modal-open .navbar-fixed-bottom {
+    margin-right: 15px
+}
 
 .table {
     display: table;
@@ -1950,21 +2305,22 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     display: table-cell;
     vertical-align: middle;
 }
-    .modal.fade .modal-dialog {
-        -webkit-transform: translate(0,-25%);
-        -ms-transform: translate(0,-25%);
-        transform: translate(0,-25%);
-        -webkit-transition: -webkit-transform .3s ease-out;
-        -moz-transition: -moz-transform .3s ease-out;
-        -o-transition: -o-transform .3s ease-out;
-        transition: transform .3s ease-out
-    }
 
-    .modal.in .modal-dialog {
-        -webkit-transform: translate(0,0);
-        -ms-transform: translate(0,0);
-        transform: translate(0,0)
-    }
+.modal.fade .modal-dialog {
+    -webkit-transform: translate(0, -25%);
+    -ms-transform: translate(0, -25%);
+    transform: translate(0, -25%);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -moz-transition: -moz-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0)
+}
 
 .modal-dialog {
     margin-left: auto;
@@ -1975,15 +2331,15 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 }
 
 
-    .modal-backdrop.fade {
-        opacity: 0;
-        filter: alpha(opacity=0)
-    }
+.modal-backdrop.fade {
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
 
-    .modal-backdrop.in {
-        opacity: .5;
-        filter: alpha(opacity=50)
-    }
+.modal-backdrop.in {
+    opacity: .5;
+    filter: alpha(opacity=50)
+}
 
 .modal-header {
     padding: 15px;
@@ -1991,9 +2347,9 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     min-height: 16.43px
 }
 
-    .modal-header .close {
-        margin-top: -2px
-    }
+.modal-header .close {
+    margin-top: -2px
+}
 
 .modal-title {
     margin: 0;
@@ -2011,36 +2367,38 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     border-top: 1px solid #e5e5e5
 }
 
-    .modal-footer:before, .modal-footer:after {
-        content: " ";
-        display: table
-    }
+.modal-footer:before,
+.modal-footer:after {
+    content: " ";
+    display: table
+}
 
-    .modal-footer:after {
-        clear: both
-    }
+.modal-footer:after {
+    clear: both
+}
 
-    .modal-footer:before, .modal-footer:after {
-        content: " ";
-        display: table
-    }
+.modal-footer:before,
+.modal-footer:after {
+    content: " ";
+    display: table
+}
 
-    .modal-footer:after {
-        clear: both
-    }
+.modal-footer:after {
+    clear: both
+}
 
-    .modal-footer .btn + .btn {
-        margin-left: 5px;
-        margin-bottom: 0
-    }
+.modal-footer .btn+.btn {
+    margin-left: 5px;
+    margin-bottom: 0
+}
 
-    .modal-footer .btn-group .btn + .btn {
-        margin-left: -1px
-    }
+.modal-footer .btn-group .btn+.btn {
+    margin-left: -1px
+}
 
-    .modal-footer .btn-block + .btn-block {
-        margin-left: 0
-    }
+.modal-footer .btn-block+.btn-block {
+    margin-left: 0
+}
 
 @media screen and (min-width:768px) {
     .modal-dialog {
@@ -2051,8 +2409,8 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     }
 
     .modal-content {
-        -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
-        box-shadow: 0 5px 15px rgba(0,0,0,.5)
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
     }
 }
 
@@ -2092,7 +2450,8 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
         display: table-row !important
     }
 
-    th.visible-print, td.visible-print {
+    th.visible-print,
+    td.visible-print {
         display: table-cell !important
     }
 
@@ -2104,7 +2463,8 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
         display: none !important
     }
 
-    th.hidden-print, td.hidden-print {
+    th.hidden-print,
+    td.hidden-print {
         display: none !important
     }
 }
@@ -2575,11 +2935,11 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
 }
 
 
-    .image-text a {
-        display: block;
-        height: 100%;
-        width: 100%
-    }
+.image-text a {
+    display: block;
+    height: 100%;
+    width: 100%
+}
 
 #header-logo {
     -webkit-animation: fadeIn .3s ease-in-out;
@@ -2595,9 +2955,9 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     padding: 0
 }
 
-    #header-logo span {
-        display: block
-    }
+#header-logo span {
+    display: block
+}
 
 
 
@@ -2616,30 +2976,27 @@ input[type=submit].btn-block, input[type=reset].btn-block, input[type=button].bt
     }
 }
 
-header {
-    background: #e0ebe8;
+
+header .nav-list {
+    padding-top: 1.5em;
+    padding-left: 0;
+    position: relative;
+    float: right
 }
 
-    header .nav-list {
-        padding-top: 1.5em;
-        padding-left: 0;
-        position: relative;
-        float: right
-    }
-
-    header.nav-top {
-        opacity: 1;
-        position: relative;
-        width: 100%;
-        z-index: 1000;
-        -webkit-transform: translate3d(0,0,0)
-    }
+header.nav-top {
+    opacity: 1;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+    -webkit-transform: translate3d(0, 0, 0)
+}
 
 @media (min-width:992px) {
     header.nav-top {
         opacity: 0;
         position: fixed;
-        -webkit-transform: translate3d(0,-130px,0);
+        -webkit-transform: translate3d(0, -130px, 0);
         -webkit-transition: .5s;
         transition: .5s;
         top: 0
@@ -2654,8 +3011,8 @@ header.nav-fixed {
 
 @media (min-width:992px) {
     header.nav-fixed {
-        -webkit-box-shadow: 0 1px 1px rgba(6,8,8,.1);
-        box-shadow: 0 1px 1px rgba(6,8,8,.1);
+        -webkit-box-shadow: 0 1px 1px rgba(6, 8, 8, .1);
+        box-shadow: 0 1px 1px rgba(6, 8, 8, .1);
         opacity: .97;
         -webkit-transition: all .8s;
         transition: all .8s;
@@ -2663,7 +3020,7 @@ header.nav-fixed {
         -webkit-perspective: 1000;
         overflow: hidden;
         -webkit-transition-timing-function: ease-in-out;
-        -webkit-transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0, 0, 0);
         background: #fff
     }
 }
@@ -2703,17 +3060,17 @@ header.nav-root {
     font-size: 120%
 }
 
-        .nav-list li a:hover {
-            color: #21564b
-        }
+.nav-list li a:hover {
+    color: #21564b
+}
 
-        .nav-list li a.active {
-            color: #21564b
-        }
+.nav-list li a.active {
+    color: #21564b
+}
 
-    .nav-list li:first-child a {
-        margin-left: 0
-    }
+.nav-list li:first-child a {
+    margin-left: 0
+}
 
 @media (min-width:992px) {
     .nav-list li a {
@@ -2754,7 +3111,7 @@ h2.dave img {
     padding: 1em 0;
     font-size: 180%;
     font-weight: 400;
-    font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 }
 
 #title {
@@ -2762,12 +3119,15 @@ h2.dave img {
     position: relative
 }
 
-    #title .container {
-        position: relative
-    }
+#title .container {
+    position: relative
+}
 
 
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:1.5),
+(min-resolution:1.5dppx) {
     #title .flag.flag-404 {
         background-image: url(../img/ui/404-flag@2x.png);
         background-size: 42px 154px
@@ -2803,23 +3163,23 @@ h2.dave img {
     max-width: 460px
 }
 
-    #FirstSection article figure {
-        margin: 0 auto;
-        max-width: 150px
-    }
+#FirstSection article figure {
+    margin: 0 auto;
+    max-width: 150px
+}
 
-        #FirstSection article figure img {
-            width: 100%
-        }
+#FirstSection article figure img {
+    width: 100%
+}
 
-    #FirstSection article h3 {
-        text-align: center;
-        padding: .5em 0
-    }
+#FirstSection article h3 {
+    text-align: center;
+    padding: .5em 0
+}
 
-    #FirstSection article p {
-        text-align: center
-    }
+#FirstSection article p {
+    text-align: center
+}
 
 h3 {
     font-size: 2em;
@@ -2850,12 +3210,12 @@ article header {
     background: 0 0
 }
 
-    article header h2 {
-        color: #1e836c;
-        text-align: center;
-        font-size: 3.8em;
-        font-weight: 400
-    }
+article header h2 {
+    color: #1e836c;
+    text-align: center;
+    font-size: 3.8em;
+    font-weight: 400
+}
 
 #seccondSection {
     z-index: 980;
@@ -2902,7 +3262,10 @@ article header {
     min-height: 155px
 }
 
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:1.5),
+(min-resolution:1.5dppx) {
     #seccondSection .home-dev-info {
         background-size: 3px auto
     }
@@ -2928,7 +3291,10 @@ article header {
     position: relative
 }
 
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:1.5),
+(min-resolution:1.5dppx) {
     #seccondSection .home-design-info {
         background-size: 3px auto
     }
@@ -2941,7 +3307,7 @@ article header {
 }
 
 
- 
+
 #seccondSection .right {
     right: 0
 }
@@ -2986,43 +3352,44 @@ article header {
 }
 
 
-    .btn-hldr .main-btn {
-        font-size: .8em;
-        text-align: center;
-        display: block;
-        position: relative;
-        background: #1e836c;
-        padding: .75em 2em .75em 3.5em;
-        color: #ffff !important;
-        text-decoration: none;
-        margin: 1.5em 0 0;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        font-weight: 400;
-        border: 0;
-        font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-        text-transform: uppercase
-    }
-    .main-btn {
-        text-align: center;
-        font-size: .8em;
-        text-align: center;
-        display: block;
-        position: relative;
-        background: #1e836c;
-        padding: .75em 2em .75em 3.5em;
-        color: #ffff !important;
-        text-decoration: none;
-        margin: 1.5em 0 0;
-        border-radius: 3px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        font-weight: 400;
-        border: 0;
-        font-family: brandon-grotesque,HelveticaNeue-Light,"Helvetica Neue Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-        text-transform: uppercase
-    }
+.btn-hldr .main-btn {
+    font-size: .8em;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: #1e836c;
+    padding: .75em 2em .75em 3.5em;
+    color: #ffff !important;
+    text-decoration: none;
+    margin: 1.5em 0 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: 400;
+    border: 0;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase
+}
+
+.main-btn {
+    text-align: center;
+    font-size: .8em;
+    text-align: center;
+    display: block;
+    position: relative;
+    background: #1e836c;
+    padding: .75em 2em .75em 3.5em;
+    color: #ffff !important;
+    text-decoration: none;
+    margin: 1.5em 0 0;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    font-weight: 400;
+    border: 0;
+    font-family: brandon-grotesque, HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    text-transform: uppercase
+}
 
 @media (min-width:992px) {
     .btn-hldr .main-btn {
@@ -3041,7 +3408,10 @@ article header {
     background-image: url(../img/ui/drib.png)
 }
 
-@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(-o-min-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+@media (-webkit-min-device-pixel-ratio:1.5),
+(min--moz-device-pixel-ratio:1.5),
+(-o-min-device-pixel-ratio:1.5),
+(min-resolution:1.5dppx) {
     .btn-hldr .main-btn i.drib {
         background-image: url(../img/ui/drib@2x.png);
         background-size: 24px 15px
@@ -3058,34 +3428,36 @@ footer {
     padding: 3em 0
 }
 
-    footer p {
-        color: #7d4627;
-        font-size: 1em;
-        font-weight: 400;
-        margin: 0;
-        padding: 2.5em 0 0
-    }
-    footer a {
-        color: #7d4627;
-        font-size: 1em;
-        font-weight: 400;
-        margin: 0;
-        padding: 2.5em 0 0
-    }
-        footer .footer-list {
-        overflow: hidden;
-        margin: 0 auto;
-        max-width: 600px;
-        padding: 0
-    }
+footer p {
+    color: #7d4627;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 2.5em 0 0
+}
 
-        footer .footer-list li {
-            width: 50%;
-            padding-top: 1em;
-            padding-bottom: 1em;
-            display: block;
-            float: left
-        }
+footer a {
+    color: #7d4627;
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    padding: 2.5em 0 0
+}
+
+footer .footer-list {
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0
+}
+
+footer .footer-list li {
+    width: 50%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    display: block;
+    float: left
+}
 
 @media (min-width:992px) {
     footer .footer-list li {
@@ -3102,9 +3474,9 @@ footer .footer-list a {
     font-size: 1.5em
 }
 
-    footer .footer-list a:hover {
-        color: #1a443b
-    }
+footer .footer-list a:hover {
+    color: #1a443b
+}
 
 
 
@@ -3163,4 +3535,3 @@ footer .footer-list a {
         transform: translateY(0) translateX(0)
     }
 }
-

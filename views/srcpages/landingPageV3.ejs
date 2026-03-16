@@ -1,253 +1,250 @@
-
-<head>
-  <link rel="shortcut icon" type="png" href="/icon.PNG">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="/styleV3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-  body, html {
-      height: 100%;
-      color: #777;
-      line-height: 1.8;
-  }
-
-  /* Create a Parallax Effect */
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
-  /* First image (Logo. Full height) */
-  .bgimg-1 {
-    background-image: url('/TMB.jpg');
-      min-height: 100%;
-  }
-
-  /* Second image (Portfolio) */
-  .bgimg-2 {
-      background-image: url("./TMB.jpg");
-      min-height: 400px;
-  }
-
-  /* Third image (Contact) */
-  .bgimg-3 {
-      background-image: url("./TMB.jpg");
-      min-height: 400px;
-  }
-
-  .w3-wide {letter-spacing: 10px;}
-  .w3-hover-opacity {cursor: pointer;}
-
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1600px) {
-      .bgimg-1, .bgimg-2, .bgimg-3 {
-          background-attachment: scroll;
-          min-height: 400px;
-      }
-  }
-  </style>
-
-<body>
-  <div class="w3-top">
-    <header>
-      <a href="/v3/landingPage" class="header-brand"> DaveSmith</a>
-      <nav>
-        <ul>
-          <li><a href="/v3/landingPage"> About Me</a></li>
-          <li><a href="/v3/portfolio"> Portfolio</a></li>
-        </ul>
-        <!-- <img src="pictures/TMB.jpg" alt="TMB picture"> -->
-      </nav>
-    </header>
-
-    <!-- Navbar (sit on top) -->
-
-
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-      <a href="/v3/landingPage" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-      <a href="/v3/portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    </div>
+<!-- Header -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+    <a href="/v1/landingPage" class="text-2xl font-bold tracking-tighter hover:text-blue-600 transition-colors">
+      DAVE<span class="text-blue-600">SMITH</span>
+    </a>
+    <nav>
+      <ul class="flex gap-8 text-sm font-medium uppercase tracking-widest text-gray-500">
+        <li><a href="/v1/landingPage" class="text-blue-600">About</a></li>
+        <li><a href="/v1/portfolio" class="hover:text-blue-600 transition-colors">Portfolio</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <!-- First Parallax Image with Logo Text -->
-  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> <span class="w3-hide-small"></span>Welcome </span>
+<main class="pt-20">
+  <!-- Hero Section -->
+  <section class="h-[80vh] relative flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-fixed bg-center bg-cover"
+      style="background-image: url('/TMB.jpg'); filter: brightness(0.55);"></div>
+    <div class="relative z-10 text-center px-4">
+      <h1 class="text-white text-5xl md:text-8xl font-black tracking-tighter mb-4 animate-fade-in uppercase">
+        Smith<span class="text-blue-600">Dave</span>Design
+      </h1>
+      <p class="text-blue-400 text-lg md:text-xl font-medium tracking-[0.4em] uppercase mb-8 opacity-90 text-shadow-lg">
+        Design-Centric Engineering</p>
+      <div class="w-24 h-1 bg-blue-600 mx-auto rounded-full shadow-[0_0_20px_rgba(37,99,235,0.6)]"></div>
     </div>
-  </div>
+  </section>
 
-  <!-- Container (About Section) -->
-  <div class="w3-content w3-container w3-padding-64" id="about">
-    <h3 class="w3-center">ABOUT ME</h3>
-    <p class="w3-center"><em>I love photography and programing</em></p>
-    <p>Hello, I am recent Sonoma State University graduate, with a degree in computer science. I have passion for learning new technologies, programming, machine learning, hiking, photography, soccer and helping others. I have recently been doing
-      freelance web development and photography with my spare time as a hobby. I have been praised by my colleagues and classmates as a hard worker, problem solver, and team leader. I excel with communications which I believe is hard to find in the
-      typical programmer. Where do I see myself in four years? Developing or managing a team to deliver software to help people on a daily basis. </p>
-    <div class="w3-row">
-      <div class="w3-col m6 w3-center w3-padding-large">
-        <p><b><i class="fa fa-user w3-margin-right"></i>David Smith</b></p><br>
-        <img src="/me2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+  <!-- About Section -->
+  <section id="about" class="py-32 max-w-6xl mx-auto px-4">
+    <div class="text-center mb-20">
+      <h2 class="text-sm font-bold tracking-[0.4em] uppercase text-blue-600 mb-6">The Origin Story</h2>
+      <p class="text-4xl md:text-5xl font-bold text-gray-900 tracking-tight leading-tight">Bridging the gap between
+        <span class="text-blue-600">aesthetic vision</span> and <span class="text-indigo-600">technical
+          execution</span>.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-20 items-center mb-32">
+      <div class="space-y-8 text-lg text-gray-600 leading-relaxed font-light">
+        <p>
+          I am an aspiring Software Engineer and Sonoma State University graduate, focused on the art of systems design
+          and functional aesthetics.
+        </p>
+        <p>
+          With a background in collaborative web development and independent photography, I specialize in creating
+          intuitive user experiences backed by robust, scalable architectures. I thrive on translating complex human
+          requirements into clean, performant code.
+        </p>
+        <p>
+          My objective is to join a forward-thinking engineering team where I can contribute to high-impact systems
+          while continuing to evolve as a full-stack architect.
+        </p>
       </div>
-
-      <!-- Hide this text on small devices -->
-      <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p> I am actively looking and interviewing for software engineering career. I would like to work in an engaging, challenging, and friendly work environment where exploring and testing is encouraged. Staying in California would be my
-          preferance, but if a great opportunity arises I am willing to relocate. When it comes to company size I enjoy working with a small team but I also would enjoy working with a medium size company. You can find my resume and portfolio above
-          in the navigation area. My github, Facebook, and LinkedIn is also available at the bottom of this page. If you are interested in hiring me as a freelance developer or photographer please send me a message through the contact page, or shoot
-          me an email. I enjoy chatting about ideas, technology, sports, traveling and more! So please dont hesitate to contact me, Cheers! </p>
-      </div>
-    </div>
-    <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Full Stack Software Engineer</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design/Mobile Development</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
-    </div>
-    <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
-    </div>
-  </div>
-
-  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">8+</span><br>
-      Years of programming
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">40+</span><br>
-      Programing Projects
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">3+</span><br>
-      Happy Clients
-    </div>
-    <div class="w3-quarter w3-section">
-      <span class="w3-xlarge">1,000+</span><br>
-      Professional Photography Shots
-    </div>
-  </div>
-
-
-  <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image" src="/TMB1edit.jpg">
-      <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-  </div>
-
-
-  <div class="w3-content w3-container w3-padding-64" id="contact">
-    <div id="map"></div>
-
-      <h3 class="w3-center">WHERE I WORK</h3>
-      <p class="w3-center"><em>I'd love your feedback!</em></p>
-
-      <div class="w3-row w3-padding-32 w3-section">
-        <div class="w3-col m4 w3-container">
-          <img src="/TMB1edit.jpg" class="w3-image w3-round" style="width:100%">
+      <div class="group relative">
+        <div
+          class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl opacity-10 group-hover:opacity-20 transition duration-700 blur-2xl">
         </div>
-        <div class="w3-col m8 w3-panel">
-          <div class="w3-large w3-margin-bottom">
-            <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Davis, CA, US<br>
-            <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 1-530-601-1922<br>
-            <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: 1426davejobs@gmail.com<br>
+        <div class="relative overflow-hidden rounded-3xl shadow-2xl">
+          <img src="/me2.jpg" class="w-full transform transition duration-700 group-hover:scale-105"
+            alt="David Smith Profile">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="mb-24">
+      <h3 class="text-xl font-bold mb-8 text-center">My Core Skills</h3>
+      <div class="grid sm:grid-cols-3 gap-8">
+        <!-- Skill 1 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-blue-600 mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
           </div>
-          <p>Let's grab a coffee :)<i class="fa fa-coffee"></i>, or leave me a note:</p>
-          <form action="contactPHP.php" method="POST" role="form">
-            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Name" for="name" name="name">
+          <h4 class="font-bold mb-2 uppercase tracking-wide text-sm">Full-Stack Engineer</h4>
+          <p class="text-gray-500 text-sm">90% Expertise</p>
+          <div class="mt-4 h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-blue-600 rounded-full" style="width: 90%"></div>
+          </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold mb-2 uppercase tracking-wide text-sm">Web & Mobile Design</h4>
+          <p class="text-gray-500 text-sm">85% Expertise</p>
+          <div class="mt-4 h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-indigo-600 rounded-full" style="width: 85%"></div>
+          </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-6">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold mb-2 uppercase tracking-wide text-sm">Photography</h4>
+          <p class="text-gray-500 text-sm">75% Expertise</p>
+          <div class="mt-4 h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+            <div class="h-full bg-teal-600 rounded-full" style="width: 75%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="bg-gray-900 rounded-3xl p-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
+      <div>
+        <span class="block text-4xl font-bold mb-2 text-blue-500">2009</span>
+        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Foundation Era</span>
+      </div>
+      <div>
+        <span class="block text-4xl font-bold mb-2 text-indigo-500">40+</span>
+        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Early Prototypes</span>
+      </div>
+      <div>
+        <span class="block text-4xl font-bold mb-2 text-teal-500">Academic</span>
+        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Rigorous Theory</span>
+      </div>
+      <div>
+        <span class="block text-4xl font-bold mb-2 text-white">12+ Yrs</span>
+        <span class="text-[10px] uppercase tracking-widest text-gray-400 font-bold">Evolution</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-32 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2
+        class="text-sm font-bold tracking-[0.4em] uppercase text-blue-600 text-center mb-16 underline decoration-2 underline-offset-8">
+        Strategic Inquiries</h2>
+
+      <div class="grid md:grid-cols-2 gap-16 items-start">
+        <div class="space-y-8">
+          <img src="/TMB1edit.jpg" class="rounded-2xl shadow-xl w-full h-80 object-cover" alt="Office">
+          <div class="space-y-4">
+            <div class="flex items-center gap-4 text-gray-600">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-blue-600 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
               </div>
-              <div class="w3-half">
-                <input class="w3-input w3-border" type="text" placeholder="Email" for='email' name="email">
+              <span>Davis, CA, US</span>
+            </div>
+            <div class="flex items-center gap-4 text-gray-600">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center text-blue-600 shadow-sm">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                  </path>
+                </svg>
+              </div>
+              <span>1426davejobs@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-10 rounded-3xl shadow-xl">
+          <form class="space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Name</label>
+                <input type="text"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-100 focus:ring-2 focus:ring-blue-500 outline-none transition-all">
+              </div>
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Email</label>
+                <input type="email"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-100 focus:ring-2 focus:ring-blue-500 outline-none transition-all">
               </div>
             </div>
-            <input class="w3-input w3-border" type="text" placeholder="Message" for="message" name="message">
-            <button class="w3-button w3-black w3-right w3-section" name="submit" type="submit" data-submit="...Sending">
-              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            <div>
+              <label class="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-2">Message</label>
+              <textarea rows="4"
+                class="w-full px-4 py-3 rounded-xl border border-gray-100 focus:ring-2 focus:ring-blue-500 outline-none transition-all"></textarea>
+            </div>
+            <button
+              class="w-full py-4 bg-gray-900 text-white font-bold rounded-xl hover:bg-black transition-colors flex items-center justify-center gap-2 tracking-widest uppercase text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+              </svg>
+              Send Message
             </button>
           </form>
         </div>
       </div>
     </div>
+  </section>
+</main>
+
+<footer class="bg-white border-t border-gray-100 py-16">
+  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-8">
+    <div class="flex gap-8 text-sm font-bold uppercase tracking-widest text-gray-400">
+      <a href="/v1/landingPage" class="hover:text-blue-600 transition-colors">About</a>
+      <a href="/v1/portfolio" class="hover:text-blue-600 transition-colors">Portfolio</a>
+    </div>
+    <div class="flex gap-6 items-center">
+      <a href="https://github.com/slixxz" class="text-gray-400 hover:text-black transition-colors">
+        <i class="fa fa-github text-xl"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/david-smith-51a94411b/"
+        class="text-gray-400 hover:text-blue-600 transition-colors">
+        <i class="fa fa-linkedin text-xl"></i>
+      </a>
+      <a href="https://www.instagram.com/smith_dave_91/" class="text-gray-400 hover:text-pink-600 transition-colors">
+        <i class="fa fa-instagram text-xl"></i>
+      </a>
+    </div>
+    <p class="text-xs text-gray-400">© 2018-present Dave Smith</p>
   </div>
-  <!-- <img src="images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%;"> -->
-  <!-- Footer -->
-  <div class="main-content-wrapper">
-    <footer>
-      <ul class="footer-links-main">
-        <li><a href="/v3/landingPage"> About Me</a></li>
-        <li><a href="/v3/portfolio"> Portfolio</a></li>
-      </ul>
-      <ul class="footer-links-casses">
-        <li>1426davejobs@gmail.com</li>
-        <li>530-601-1922</li>
-      </ul>
-      <div class="footer-icon">
-        <a href="https://www.linkedin.com/in/david-smith-51a94411b/">
-          <img src="/linkedin.png" alt="linked in">
-        </a>
-        <a href="https://www.instagram.com/smith_dave_91/">
-          <img src="/insta.png" alt="insta">
-        </a>
-        <a href="https://github.com/slixxz">
-          <img src="/git.jpg" alt="git hub">
-        </a>
-      </div>
-    </footer>
-  </div>
+</footer>
 
-  <script>
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+<style>
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
     }
 
-    // Change style of navbar on scroll
-    window.onscroll = function() {
-      myFunction()
-    };
-
-    function myFunction() {
-      var navbar = document.getElementById("myNavbar");
-      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-      } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
+  }
 
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function toggleFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-
-    // Map Function! AIzaSyB0KlGcz4d_sEZ1QSOIYnU0-UYWeEJptO8
-  </script>
-
-</body>
-
-</html>
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+</style>

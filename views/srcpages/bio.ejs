@@ -1,50 +1,60 @@
-  <%- include('../partials/Header') %>
+<%- include('../partials/Header') %>
 
- <style>
-.center{
-    display: flex;
-    justify-content: center;
-}
-
+  <style>
+    .center {
+      display: flex;
+      justify-content: center;
+    }
   </style>
-<br>
+  <br>
 
   <section id="seccondSection">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <article>
-          <header class="nav-root" style="background-color: white;">
-            <h2>A bit about me</h2>
-             <%- include('../partials/hr') %>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <article>
+            <header class="nav-root" style="background-color: white;">
+              <h2>A bit about me</h2>
+              <%- include('../partials/hr') %>
 
 
-            <div class="details">
-                <p style="  line-height: 200%;">My passion is in technology! I am a hard working problem solver who is passionate about full stack development, new technology / languages, machine learning, and helping others as a software engineer. I have worked throughout northern California and currently live and work in the north bay area. When I am not programming you can find me hiking, mountaineering, playing soccer, and enjoying friends and family!  </p>
-            </div>
-               <br>
-                 
-               </br>
-                    <div class="row">
-                    <div class="col-sm-4"> 
+                <div class="details">
+                  <p style="  line-height: 200%;">My passion is in technology! I am a hard working problem solver who is
+                    passionate about full stack development, new technology / languages, machine learning, and helping
+                    others as a software engineer. I have worked throughout northern California and currently live and
+                    work in the north bay area. When I am not programming you can find me hiking, mountaineering,
+                    playing soccer, and enjoying friends and family! </p>
+                </div>
+                <br>
+
+                </br>
+                <div class="row">
+                  <div class="col-sm-4">
                     <div class="center">
-                      <lottie-player src="https://assets7.lottiefiles.com/temp/lf20_NxuRdg.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>
+                      <lottie-player src="https://assets7.lottiefiles.com/temp/lf20_NxuRdg.json"
+                        background="transparent" speed="1" style="width: 200px; height: 200px;" loop=""
+                        autoplay=""></lottie-player>
                     </div>
                     <h4>
                       <p style="text-align: center;">
-                        <a href="/ResumeDavidSmith.pdf">Resume</a>
+                        <a href="https://docs.google.com/document/d/1xmsOslKG15IKAP1ZYX3dyT6z5YHvas-W7mX426Fo7Bc/edit?tab=t.0"
+                          target="_blank">Resume</a>
 
-                        <i class="far fa-arrow-alt-circle-right biobuttons" href="/ResumeDavidSmith.pdf"> </i>
+                        <i class="far fa-arrow-alt-circle-right biobuttons"
+                          onclick="window.open('https://docs.google.com/document/d/1xmsOslKG15IKAP1ZYX3dyT6z5YHvas-W7mX426Fo7Bc/edit?tab=t.0', '_blank')">
+                        </i>
                       </p>
 
                     </h4>
                   </div>
-                        <div class="col-sm-4"> 
+                  <div class="col-sm-4">
                     <div class="center">
 
 
                       <!--<lottie-player src="https://assets3.lottiefiles.com/packages/lf20_9W7N8f.json"  background="transparent"  speed="1"  style="width: 100px; height: 100px;"  loop  autoplay></lottie-player>  -->
-                      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_DnLK6k.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>
+                      <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_DnLK6k.json"
+                        background="transparent" speed="1" style="width: 200px; height: 200px;" loop=""
+                        autoplay=""></lottie-player>
                     </div>
                     <h4 onclick="openEmail()">
                       <p class="biobuttons" style="text-align: center;">
@@ -54,30 +64,33 @@
 
                     </h4>
                   </div>
-                         <div class="col-sm-4"> 
+                  <div class="col-sm-4">
                     <div class="center">
-                      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fsonufza.json"  background="transparent"  speed="1"  style="width: 200px; height: 200px;"  loop=""  autoplay=""></lottie-player>
+                      <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_fsonufza.json"
+                        background="transparent" speed="1" style="width: 200px; height: 200px;" loop=""
+                        autoplay=""></lottie-player>
                     </div>
-                    <h4 >
-                      <p class ="biobuttons" style="text-align: center;">
+                    <h4>
+                      <p class="biobuttons" style="text-align: center;">
                         <a href="https://cs.sonoma.edu/">Education</a>
-                        <i href="https://cs.sonoma.edu/" class="far fa-arrow-alt-circle-right biobuttons" > </i>
+                        <i href="https://cs.sonoma.edu/" class="far fa-arrow-alt-circle-right biobuttons"> </i>
                       </p>
                     </h4>
                   </div>
 
-                         
-                    </div>
 
-        </article>
+                </div>
+
+          </article>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <section id="thirdSection">
     <div class="container">
       <p>Check out me and my brothers new casual tech talking youtube channel.</p>
-      <iframe width="100%" height="475px" src="https://www.youtube.com/embed/GGPolr5ySa4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+      <iframe width="100%" height="475px" src="https://www.youtube.com/embed/GGPolr5ySa4" frameborder="0"
+        gesture="media" allow="encrypted-media" allowfullscreen></iframe>
     </div>
   </section>
 
@@ -88,59 +101,57 @@
 
       <script>
 
-        $('#contactForm').submit(function(e) {
-        // Coding
-        $('#myModal').modal('hide');
+        $('#contactForm').submit(function (e) {
+          // Coding
+          $('#myModal').modal('hide');
         });
-        $('#connectTrig').click(function(e) {
-        // Coding
-        $('#myModal').modal('show');
+        $('#connectTrig').click(function (e) {
+          // Coding
+          $('#myModal').modal('show');
         });
-        $('#eduButton').click(function(e) {
-        // Coding
-        $('#eduModal').modal('show');
+        $('#eduButton').click(function (e) {
+          // Coding
+          $('#eduModal').modal('show');
         });
       </script>
 
 
-    <script>
-       $(function(){
+      <script>
+        $(function () {
 
-      var _top = $(window).scrollTop();
-      var _direction;
-      $(window).scroll(function(){
-      var _cur_top = $(window).scrollTop();
+          var _top = $(window).scrollTop();
+          var _direction;
+          $(window).scroll(function () {
+            var _cur_top = $(window).scrollTop();
 
-      var mq = window.matchMedia( "(min-width: 992x)" );
-      var width = Math.max(window.screen.width, window.innerWidth);
+            var mq = window.matchMedia("(min-width: 992x)");
+            var width = Math.max(window.screen.width, window.innerWidth);
 
-      if (width > 992) {//check the screen size
-      var navB = document.getElementById("home-top");
-      if(_top < _cur_top)
-        {
-            _direction = 'down';
-           navB.style.top = "-200px";
-           navB.style.borderBottom = "solid 0px #7d4627";
+            if (width > 992) {//check the screen size
+              var navB = document.getElementById("home-top");
+              if (_top < _cur_top) {
+                _direction = 'down';
+                navB.style.top = "-200px";
+                navB.style.borderBottom = "solid 0px #7d4627";
 
+              }
+              else {
+                _direction = 'up';
+                navB.style.top = "0";
+                navB.style.borderBottom = "solid 1px #7d4627";
+                navB.style.backgroundColor = "#c5ded7";
+                $(navB).removeClass('bg-transparent')
+
+
+              }
+              _top = _cur_top;
+            } else {
+            }
+
+
+          });
+        });
+        function openEmail() {
+          window.location.href = 'mailto:smithdavedesign@gmail.com';
         }
-        else
-        {
-            _direction = 'up';
-            navB.style.top = "0";
-            navB.style.borderBottom = "solid 1px #7d4627";
-            navB.style.backgroundColor = "#c5ded7";
-            $(navB).removeClass('bg-transparent')
-                  
-
-        }
-        _top = _cur_top;
-      } else {
-      }
-
-     
-    });
-});
-function openEmail() {
-        window.location.href = 'mailto:smithdavedesign@gmail.com';
-    }
-    </script>
+      </script>
