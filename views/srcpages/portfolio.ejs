@@ -23,7 +23,10 @@
                                                     <a>David Smith </a>
                                                 </h1>
                                                 <div class="profile-container">
-                                                    <img class="profile-picture" src="/me.jpeg" alt="Profile Picture">
+                                                    <picture>
+                                                        <source srcset="/me.webp" type="image/webp">
+                                                        <img class="profile-picture" src="/me.jpeg" alt="Profile Picture" fetchpriority="high" decoding="async" width="120" height="120">
+                                                    </picture>
                                                 </div>
                                             </div>
                                             <div class="name-label">
@@ -413,6 +416,239 @@
                                 </ol>
                             </div>
                         </section>
+                        <!-- ========== SOLIDIGM FEATURED WORK ========== -->
+                        <section id="solidigm" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+                            aria-label="Featured work at Solidigm">
+                            <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl" style="padding: 20px 0px 12px 0px;">Featured Work at Solidigm</h2>
+                            <p class="mb-8 text-sm leading-normal">Selected high-impact initiatives from my role as Senior Tech Lead — spanning AI tooling, enterprise platform engineering, and digital marketing strategy.</p>
+                            <div>
+                                <ul class="group/list">
+
+                                    <!-- Copilot ROI Dashboard -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://copilot-dashboard-dun.vercel.app/dashboard?tab=corporate"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Copilot ROI Dashboard live demo"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>Copilot ROI Dashboard<span class="inline-block"><svg
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 20 20" fill="currentColor"
+                                                                class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                aria-hidden="true">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                    clip-rule="evenodd"></path>
+                                                            </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Engineered a real-time executive dashboard surfacing GitHub Copilot adoption trends, team-level usage breakdowns, and an ROI calculator — giving CTOs and engineering managers clear visibility into what AI enablement is actually delivering. Identified a 25% license optimization opportunity and documented 15–35% operational cost reductions across engineering teams.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">JavaScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">GitHub Copilot API</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Data Visualization</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ 25% license optimization · 15–35% cost reduction documented</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/copilot-roi-dashboard.webp" type="image/webp">
+                                                <img alt="Copilot ROI Dashboard screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/copilot-roi-dashboard.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- Figma → Jira / Wiki Automation (Solidigm) -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3 class="font-medium leading-snug text-slate-200">Figma → Jira / Wiki Automation <span class="text-slate-500 font-normal text-sm">· Internal Tool</span></h3>
+                                                <p class="mt-2 text-sm leading-normal">Architected and shipped an internal Figma plugin that auto-generates Jira tickets, Confluence Implementation Plan wikis, and QA Test Case docs directly from design frames using Gemini AI vision analysis and MCP server orchestration. Eliminated manual documentation labor across the entire engineering org — owned end-to-end from product definition through stakeholder alignment with PMs and Scrum Masters to engineering execution.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Gemini 2.0 Flash</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MCP</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Jira API</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Confluence API</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Figma Plugin API</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ Manual documentation labor eliminated org-wide</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/figma-jira-automation.webp" type="image/webp">
+                                                <img alt="Figma to Jira automation tool screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/figma-jira-automation.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- QA Test Case Automation -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3 class="font-medium leading-snug text-slate-200">QA Test Case Automation <span class="text-slate-500 font-normal text-sm">· Internal Tool</span></h3>
+                                                <p class="mt-2 text-sm leading-normal">Built an automated test case generation pipeline using Storybook component documentation and MCP servers. The system extracts component specs and generates structured QA test cases automatically, reducing manual QA authoring effort while maintaining team-wide coverage standards.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Storybook</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MCP Servers</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ Reduced manual QA ramp time team-wide</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/qa-automation.webp" type="image/webp">
+                                                <img alt="QA Test Case Automation pipeline screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/qa-automation.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- AI Engineering KT Series -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3 class="font-medium leading-snug text-slate-200">AI Engineering Knowledge Transfer Series <span class="text-slate-500 font-normal text-sm">· Internal Curriculum</span></h3>
+                                                <p class="mt-2 text-sm leading-normal">Designed and led an org-wide curriculum covering MCP server development, GitHub Copilot Skills, IDE optimization, and agentic engineering workflows. Created the human infrastructure that makes AI adoption stick — not just tooling rollouts, but repeatable practices, custom instructions, and human-in-the-loop checkpoints that scale across engineering teams.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MCP</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">GitHub Copilot</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Agentic Workflows</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Curriculum Design</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ 10+ custom internal agent tools deployed by engineers</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/ai-learning-series.webp" type="image/webp">
+                                                <img alt="AI Engineering KT Series slide deck" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/ai-learning-series.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- TCO & Endurance Tool Migration -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://www.solidigm.com/products/estimator/ssdtco.html"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Solidigm TCO and Endurance Estimator Tools"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            SSD TCO &amp; Endurance Estimator Tools<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Migrated two proprietary SSD evaluation tools in-house and onto solidigm.com — the <a class="font-medium text-slate-300 hover:text-teal-300" href="https://www.solidigm.com/products/estimator/ssdtco.html" target="_blank" rel="noreferrer">TCO Estimator</a>, which helps organizations pinpoint cost-savings and sustainability benefits of deploying Solidigm SSDs, and the <a class="font-medium text-slate-300 hover:text-teal-300" href="https://www.solidigm.com/products/estimator/ssdendurance.html" target="_blank" rel="noreferrer">Endurance Estimator</a>, which calculates expected SSD lifespan under specific workloads and user configurations. Eliminated external hosting and licensing dependency.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">AEM</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Java</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">HTL</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">JavaScript</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ $50K/year saved in external hosting &amp; licensing</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/solidigm-tools.webp" type="image/webp">
+                                                <img alt="Solidigm SSD estimator tool screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/solidigm-tools.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- solidigm.com Redesign -->
+                                    <li class="mb-12">
+                                        <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://www.solidigm.com/"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Solidigm.com Corporate Website Redesign"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            solidigm.com Full Website Redesign<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Conducted a full site audit, hired and led a cross-functional team to re-strategize brand content and visual design, then drove delivery as both Product Owner and Engineering Manager. Modernized the legacy 2.0 site into an industry-standard, clean AI-company aesthetic — improving content architecture, visual hierarchy, and conversion-focused UX across the entire domain.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">AEM</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">HTL</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Java</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Product Ownership</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Content Strategy</div></li>
+                                                </ul>
+                                                <p class="mt-3 text-xs font-semibold uppercase tracking-wide text-teal-300">↑ Increased quality traffic · Lower bounce rate · Higher CTR</p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/solidigm-website.webp" type="image/webp">
+                                                <img alt="solidigm.com website redesign screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/solidigm-website.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Earlier Wins at Solidigm — compact list -->
+                                <div class="mt-4 mb-12 rounded-xl border border-slate-700/50 bg-slate-800/30 px-6 py-6">
+                                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-widest text-slate-400">Earlier Wins at Solidigm</h3>
+                                    <ul class="space-y-3">
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">Company Launch &amp; Brand Foundation</span> — Helped stand up the Solidigm brand from the ground up when it spun off from Intel's NAND and SSD business.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">Intel Systems Exit (TSA)</span> — Led technical migration away from Intel-owned tools, data systems, and infrastructure as part of the Transition Services Agreement.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">Training Portal Build-out</span> — Stood up internal learning and enablement portals for the engineering and go-to-market organizations.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">SSO Integration</span> — Implemented enterprise single sign-on across internal and marketing platforms.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">SmartRecruit Career Integration</span> — Integrated the SmartRecruit ATS platform into solidigm.com/careers for seamless applicant tracking.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">MSD Integration</span> — Microsoft Dynamics integration for support enablement, connecting CRM workflows to customer-facing systems.</span>
+                                        </li>
+                                        <li class="flex items-start gap-3 text-sm text-slate-400">
+                                            <span class="mt-0.5 h-1.5 w-1.5 shrink-0 rounded-full bg-teal-400"></span>
+                                            <span><span class="font-medium text-slate-300">PIM System Integration</span> — Deployed a Product Information Management system to power the product catalog and technical spec pages on solidigm.com.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ========== /SOLIDIGM FEATURED WORK ========== -->
+
                         <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
                             aria-label="Selected projects">
                             <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl" style="
@@ -420,6 +656,256 @@
 ">Projects</h2>
                             <div>
                                 <ul class="group/list">
+
+                                    <!-- AI-DevOps Nexus -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://ai-devops-nexus-web.onrender.com/learn"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="AI-DevOps Nexus live demo"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            AI-DevOps Nexus<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Self-hostable feedback-to-engineering control plane. Customers and testers submit bug reports via a hosted widget; AI routes and triages each report, holding it in a human-review queue before promoting approved work into GitHub PRs — keeping every deployment explicitly review-gated.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Fastify</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PostgreSQL</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Redis</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MCP</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">GitHub App OAuth</div></li>
+                                                </ul>
+                                                <p class="mt-3"><a class="text-xs font-medium text-slate-400 hover:text-teal-300 transition-colors" href="https://github.com/smithdavedesign/AI-Took-My-Job" target="_blank" rel="noreferrer">↗ View on GitHub</a></p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/ai-devops-nexus.webp" type="image/webp">
+                                                <img alt="AI-DevOps Nexus dashboard" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/ai-devops-nexus.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- Open Fly Travel Assistant -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://open-travel-2ypeknx2s-david-smiths-projects-fe129786.vercel.app/trips"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Open Fly Travel Assistant live demo"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            Open Fly Travel Assistant<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Collaborative group travel app built with Next.js 15 and Supabase. Plan trips together with Kanban/Calendar itineraries, upload PDFs and booking confirmations for Claude AI to automatically extract event details, and split expenses across the group with real-time sync.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Next.js 15</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Supabase</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Claude API</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Tailwind v4</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Vercel</div></li>
+                                                </ul>
+                                                <p class="mt-3"><a class="text-xs font-medium text-slate-400 hover:text-teal-300 transition-colors" href="https://github.com/smithdavedesign/Open-Travel" target="_blank" rel="noreferrer">↗ View on GitHub</a></p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/open-travel.webp" type="image/webp">
+                                                <img alt="Open Fly Travel Assistant screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/open-travel.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- AI CLI Social Autoposter -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://github.com/smithdavedesign/AI-CLI-Social-Autoposter"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="AI CLI Social Autoposter"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            AI CLI Social Autoposter<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">CLI tool that generates and publishes AI-written posts to LinkedIn and Bluesky on a schedule. Posts are generated using a persona file so they match your authentic voice — not generic AI content. Runs automatically via GitHub Actions at ~$0.001 per post using Claude Haiku.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Claude Haiku</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">GitHub Actions</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Bluesky API</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">LinkedIn API</div></li>
+                                                </ul>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/ai-social-autoposter.webp" type="image/webp">
+                                                <img alt="AI CLI Social Autoposter terminal output" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/ai-social-autoposter.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- Figma → Jira / Wiki / QA Automation -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://github.com/smithdavedesign/Figma-Jira-Ticket-Automation-Tool"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Figma to Jira Wiki QA Automation Tool"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            Figma → Jira / Wiki / QA Automation<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Figma plugin that eliminates manual documentation. Select a design frame, pick a tech stack, hit Generate — Gemini 2.0 Flash analyzes the design via vision AI and auto-creates a Jira ticket, Confluence Implementation Plan wiki, QA Test Case wiki, and Git branch via MCP orchestration. Zero copy-pasting.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">TypeScript</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Gemini 2.0 Flash</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">MCP</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Redis</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Figma API</div></li>
+                                                </ul>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/figma-jira-automation.webp" type="image/webp">
+                                                <img alt="Figma to Jira automation plugin screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/figma-jira-automation.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- GitHub Cron Job Automation -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://github.com/smithdavedesign/gitHub-cron-job-app"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="GitHub Cron Job Automation"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            GitHub Cron Job Automation<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Express app that uses the GitHub API (Octokit) and node-cron to run scheduled repository operations automatically. Includes a REST endpoint for manual job triggers and demonstrates full deployment lifecycle from local dev to Heroku production.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Express</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Octokit</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">node-cron</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Heroku</div></li>
+                                                </ul>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/github-cron-job.webp" type="image/webp">
+                                                <img alt="GitHub Cron Job Automation app screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/github-cron-job.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
+                                    <!-- Roots & Branches — Family Tree App -->
+                                    <li class="mb-12">
+                                        <div
+                                            class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                                            <div
+                                                class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg">
+                                            </div>
+                                            <div class="z-10 sm:order-2 sm:col-span-6">
+                                                <h3><a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 group/link text-base"
+                                                        href="https://familytree-e.com/"
+                                                        target="_blank" rel="noreferrer"
+                                                        aria-label="Roots and Branches Family Tree App"><span
+                                                            class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span><span>
+                                                            Roots &amp; Branches — Family Tree App<span class="inline-block"><svg
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 20 20" fill="currentColor"
+                                                                    class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px"
+                                                                    aria-hidden="true">
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                                                                        clip-rule="evenodd"></path>
+                                                                </svg></span></span></a></h3>
+                                                <p class="mt-2 text-sm leading-normal">Full-stack interactive genealogy platform. Build and visualize your family lineage with dynamic React Flow graph layouts, explore your ancestors' geographic history on interactive heatmap and marker maps, attach photos via Google Drive, and collaborate with relatives in real time. Features tiered subscription billing via Stripe, AI-powered biography generation, dual OAuth (login + Google Drive/Photos), and comprehensive RBAC with audit logging.</p>
+                                                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React + Vite</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Node.js / Express</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">PostgreSQL</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Supabase</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">React Flow</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Stripe</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Google OAuth</div></li>
+                                                    <li class="mr-1.5 mt-2"><div class="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300">Vercel / Render</div></li>
+                                                </ul>
+                                                <p class="mt-3"><a class="text-xs font-medium text-slate-400 hover:text-teal-300 transition-colors" href="https://github.com/smithdavedesign/family-tree" target="_blank" rel="noreferrer">↗ View on GitHub</a></p>
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/family-tree.webp" type="image/webp">
+                                                <img alt="Roots and Branches family tree app screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/family-tree.png">
+                                            </picture>
+                                        </div>
+                                    </li>
+
                                     <li class="mb-12">
                                         <div
                                             class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -474,11 +960,13 @@
                                                             Github.io</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/astro-docs.png"
-                                                src="/astro-docs.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/astro-docs.webp" type="image/webp">
+                                                <img alt="Algorythms Educational Website screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/astro-docs.png">
+                                            </picture>
                                         </div>
                                     </li>
 
@@ -533,11 +1021,13 @@
                                                             HTML</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/portfolio-v2.png"
-                                                src="/portfolio-v2.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/portfolio-v2.webp" type="image/webp">
+                                                <img alt="Portfolio V2 Website screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/portfolio-v2.png">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -575,11 +1065,13 @@
                                                             HTML</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/portfoliov3.png"
-                                                src="/portfoliov3.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/portfoliov3.webp" type="image/webp">
+                                                <img alt="Portfolio V3 Website screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/portfoliov3.png">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -642,11 +1134,13 @@
                                                             HTML</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/fairfax-offgrid-campers.png"
-                                                src="/fairfax-offgrid-campers.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/fairfax-offgrid-campers.webp" type="image/webp">
+                                                <img alt="Fairfax Off Grid Campers Website screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/fairfax-offgrid-campers.png">
+                                            </picture>
                                         </div>
 
                                     </li>
@@ -675,11 +1169,13 @@
                                                 <p class="mt-2 text-sm leading-normal">Facilitated the promotion of an
                                                     artist's sound healing services by conceptualizing, designing, and
                                                     developing an interactive website.</p>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/meri-superak.png"
-                                                src="/meri-superak.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/meri-superak.webp" type="image/webp">
+                                                <img alt="Meri Superak Artist Website screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/meri-superak.png">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -738,11 +1234,13 @@
                                                             VIM</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/syntactic-analyzer.png"
-                                                src="/syntactic-analyzer.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/syntactic-analyzer.webp" type="image/webp">
+                                                <img alt="Custom Compiler Syntactical Analyzer screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/syntactic-analyzer.png">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -806,11 +1304,13 @@
                                                             VIM</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/lexical-analyser.jpeg"
-                                                src="/lexical-analyser.jpeg">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/lexical-analyser.webp" type="image/webp">
+                                                <img alt="Custom Compiler Lexical Analyzer screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/lexical-analyser.jpeg">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -849,11 +1349,13 @@
                                                             Xcode</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/mine-sweeper.png"
-                                                src="/mine-sweeper.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/mine-sweeper.webp" type="image/webp">
+                                                <img alt="Minesweeper iOS App screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/mine-sweeper.png">
+                                            </picture>
                                         </div>
                                     </li>
                                     <li class="mb-12">
@@ -902,11 +1404,13 @@
                                                             Firebase Cloud Messaging</div>
                                                     </li>
                                                 </ul>
-                                            </div><img alt="" loading="lazy" width="200" height="48" decoding="async"
-                                                data-nimg="1"
-                                                class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
-                                                style="color:transparent" srcset="/cwolf-wisper-sonoma-state.png"
-                                                src="/cwolf-wisper-sonoma-state.png">
+                                            </div>
+                                            <picture class="sm:order-1 sm:col-span-2 sm:translate-y-1">
+                                                <source srcset="/cwolf-wisper-sonoma-state.webp" type="image/webp">
+                                                <img alt="CWolf-Whisper Sonoma State Senior Project screenshot" loading="lazy" width="200" height="112" decoding="async"
+                                                    class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30"
+                                                    src="/cwolf-wisper-sonoma-state.png">
+                                            </picture>
                                         </div>
                                     </li>
                                 </ul>
