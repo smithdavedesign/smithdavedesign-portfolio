@@ -59,4 +59,15 @@ router.get('/v4/landingPage', function (req, res, next) {
     res.render('srcpages/landingPageV4', { title: 'PortfolioV4', layout: 'layoutV4' });
 });
 
+// Resume
+router.get('/resume', function (req, res) {
+    res.render('srcpages/resume', { title: 'Resume — David George Smith', layout: 'layout-resume' });
+});
+router.get('/v3/resume', function (req, res) {
+    res.render('srcpages/resume', { title: 'Resume — David George Smith', layout: 'layout-resume' });
+});
+router.get('/v4/resume', function (req, res) {
+    res.render('srcpages/resume', { title: 'Resume — David George Smith', layout: 'layout-resume' });
+});
+
 module.exports = router;
