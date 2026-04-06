@@ -50,13 +50,13 @@ router.get('/v3/landingPage', function (req, res, next) {
 });
 
 
-// V4 – The AI Orchestrator
+// V4 – Coming soon (redirect to v3 until ready)
 router.get('/v4/', function (req, res) {
-    res.render('srcpages/landingPageV4', { title: 'PortfolioV4', layout: 'layoutV4' });
+    res.redirect('/v3/landingPage');
 });
 
-router.get('/v4/landingPage', function (req, res, next) {
-    res.render('srcpages/landingPageV4', { title: 'PortfolioV4', layout: 'layoutV4' });
+router.get('/v4/landingPage', function (req, res) {
+    res.redirect('/v3/landingPage');
 });
 
 // Resume
