@@ -5,6 +5,7 @@ const profile = require('../../portfolio-v4/content/profile.json');
 
 const SITE_URL = (process.env.SITE_URL || 'https://smithdavedesign.herokuapp.com').replace(/\/$/, '');
 const slugs = profile.caseStudies.map((c) => c.slug);
+const buildSlugs = profile.builds.map((b) => b.slug);
 
 const caseSummary = (c) => ({
     slug: c.slug,
@@ -56,6 +57,23 @@ const tools = [
             const c = profile.caseStudies.find((x) => x.slug === slug);
             const { image, imageAlt, pipeline, code, ...rest } = c;
             return { ...rest, pipeline, url: `${SITE_URL}/v4/work/${c.slug}/` };
+        },
+    },
+    {
+        name: 'list_builds',
+        description: "List products Dave has designed and built himself (side projects), with a one-line description, stack and links. Use get_build for detail.",
+        input: z.object({}),
+        run: () => ({
+            builds: profile.builds.map((b) => ({ slug: b.slug, name: b.name, tagline: b.tagline, stack: b.stack, github: b.github, live: b.live, url: `${SITE_URL}/v4/builds/${b.slug}/` })),
+        }),
+    },
+    {
+        name: 'get_build',
+        description: 'Full detail for one of Dave\'s built products: summary, key capabilities, stack and links.',
+        input: z.object({ slug: z.enum(buildSlugs).describe('Build slug from list_builds') }),
+        run: ({ slug }) => {
+            const { images, ...b } = profile.builds.find((x) => x.slug === slug);
+            return { ...b, url: `${SITE_URL}/v4/builds/${b.slug}/` };
         },
     },
     {

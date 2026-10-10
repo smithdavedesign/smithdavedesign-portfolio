@@ -4,7 +4,7 @@ export const dynamic = "force-static";
 
 /** Plain-text profile for LLM crawlers (llmstxt.org convention). */
 export function GET() {
-  const { person, contact, metrics, caseStudies, governance, stack } = profile;
+  const { person, contact, metrics, caseStudies, governance, stack, builds } = profile;
   const body = [
     `# ${person.name}`,
     "",
@@ -19,6 +19,9 @@ export function GET() {
     "",
     "## Case studies",
     ...caseStudies.map((c) => `- [${c.title}](${SITE_URL}/v4/work/${c.slug}/): ${c.action} Tooling: ${c.tooling.join(", ")}. Result: ${c.metric}`),
+    "",
+    "## Products built",
+    ...builds.map((b) => `- [${b.name}](${SITE_URL}/v4/builds/${b.slug}/): ${b.summary} Stack: ${b.stack.join(", ")}. Source: ${b.github}${b.live ? ` · Live: ${b.live}` : ""}`),
     "",
     "## Governance approach",
     governance.intro,

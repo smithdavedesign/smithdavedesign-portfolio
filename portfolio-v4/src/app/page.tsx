@@ -6,9 +6,10 @@ import RoiCalculator from "@/components/RoiCalculator";
 import AskConsole from "@/components/AskConsole";
 import CopyButton from "@/components/CopyButton";
 import Pipeline from "@/components/Pipeline";
+import BuildCard from "@/components/BuildCard";
 import { profile, MCP_URL, SITE_URL } from "@/lib/profile";
 
-const { person, contact, metrics, caseStudies, ktSeries, governance, stack, pillars } = profile;
+const { person, contact, metrics, caseStudies, ktSeries, governance, stack, pillars, builds } = profile;
 
 const featured = caseStudies.slice(0, 3);
 const more = caseStudies.slice(3);
@@ -135,7 +136,7 @@ export default function Home() {
           </div>
           <p className="label mt-5 mb-2">Exposed tools</p>
           <ul className="grid grid-cols-1 gap-1 font-mono text-xs text-muted sm:grid-cols-2">
-            {["get_experience_summary", "retrieve_roi_metrics", "list_case_studies", "get_case_study", "get_stack", "get_contact"].map((t) => (
+            {["get_experience_summary", "retrieve_roi_metrics", "list_case_studies", "get_case_study", "list_builds", "get_build", "get_stack", "get_contact"].map((t) => (
               <li key={t}>
                 <span className="text-signal">ƒ</span> {t}
               </li>
@@ -221,6 +222,23 @@ export default function Home() {
               <p className="text-sm leading-relaxed text-muted">{c.metric}</p>
               <Pipeline steps={c.pipeline} />
             </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ── Builds: shipped side projects ────────────────── */}
+      <section id="builds" aria-labelledby="builds-h" className="mt-16">
+        <div className="mb-4 flex flex-wrap items-end justify-between gap-4">
+          <h2 id="builds-h" className="text-3xl font-semibold tracking-tight sm:text-4xl">
+            Things I&apos;ve built
+          </h2>
+          <p className="label">screenshots from the real apps</p>
+        </div>
+        <div className="console-grid lg:grid-cols-6">
+          {builds.map((b, i) => (
+            <div key={b.slug} className={i < 2 ? "lg:col-span-3" : "lg:col-span-2"}>
+              <BuildCard build={b} index={i} large={i < 2} />
+            </div>
           ))}
         </div>
       </section>

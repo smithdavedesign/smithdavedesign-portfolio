@@ -4,6 +4,7 @@ import { profile } from "@/lib/profile";
 const NAV = [
   { href: "/#runs", label: "Runs" },
   { href: "/#work", label: "Work" },
+  { href: "/#builds", label: "Builds" },
   { href: "/#governance", label: "Governance" },
   { href: "/#ask", label: "Ask" },
 ];
