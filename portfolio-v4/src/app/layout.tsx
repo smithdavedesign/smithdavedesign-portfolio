@@ -1,51 +1,36 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import "./globals.css";
-import VersionOrchestrator from "@/components/VersionOrchestrator";
+import TopBar from "@/components/TopBar";
+import Chronos from "@/components/Chronos";
+import { profile, SITE_URL } from "@/lib/profile";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const { person } = profile;
 
 export const metadata: Metadata = {
-  title: "Dave Smith - AI Orchestrator",
-  description: "Architecting the systems and culture where AI and humans collaborate.",
-  keywords: ["AI Orchestrator", "Technical Product Lead", "Model Context Protocol", "Next.js", "AI Engineer"],
+  metadataBase: new URL(SITE_URL),
+  title: { default: `${person.shortName} — ${person.title}`, template: `%s — ${person.shortName}` },
+  description: person.thesis,
+  authors: [{ name: person.name }],
+  keywords: ["AI Orchestrator", "Technical Product Lead", "Model Context Protocol", "MCP", "AI enablement", "Copilot ROI", "Engineering Manager", "Human-in-the-loop"],
+  alternates: { canonical: "/v4/" },
+  openGraph: { type: "profile", siteName: person.shortName, title: `${person.shortName} — ${person.title}`, description: person.headline, url: "/v4/" },
+  twitter: { card: "summary_large_image" },
 };
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Dave Smith",
-  "jobTitle": "AI Orchestrator & Technical Product Lead",
-  "url": "https://davesmith.design", /* Placeholder */
-  "knowsAbout": ["Artificial Intelligence", "Model Context Protocol", "Agentic Workflows", "Next.js 15", "LangGraph"],
-};
+export const viewport: Viewport = { themeColor: "#0d0c0a", colorScheme: "dark" };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="min-h-dvh">
+        <a href="#main" className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-signal focus:px-3 focus:py-2 focus:text-bg">
+          Skip to content
+        </a>
+        <TopBar />
         {children}
-        <VersionOrchestrator />
+        <Chronos />
       </body>
     </html>
   );

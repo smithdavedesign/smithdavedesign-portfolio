@@ -1,0 +1,174 @@
+{
+  "person": {
+    "name": "David George Smith",
+    "shortName": "Dave Smith",
+    "title": "AI Orchestrator & Technical Product Lead",
+    "roles": ["Senior Full Stack Engineer", "Engineering Manager", "Product Owner", "AI Enablement Lead"],
+    "employer": "Solidigm",
+    "location": "California, USA",
+    "headline": "I design the goals. Agents do the labor. I govern the system.",
+    "thesis": "I build the AI-powered systems engineering teams run on — MCP integrations, LLM automation pipelines, Copilot adoption dashboards — and lead the people who use them. I sit at the layer above the automation: I set strategy, manage engineers, own product decisions, and measure what AI is actually worth.",
+    "origin": "My path started with early HTML/CSS on Myspace, moved through a Computer Science degree at Sonoma State University, and grew through roles at UC Davis and Madison Logic where I built internal tools, systemized documentation, and modernized large marketing engineering platforms. Now at Solidigm, I lead engineering initiatives at the intersection of AI, product, and people management.",
+    "education": "B.S. Computer Science, Sonoma State University",
+    "history": [
+      { "org": "Solidigm", "summary": "Engineering Manager, Product Owner and AI Enablement Lead — AI tooling, MCP integrations, Copilot ROI analytics, org-wide AI curriculum." },
+      { "org": "Madison Logic", "summary": "Modernized large marketing engineering platforms, dispatchers and front-end systems." },
+      { "org": "UC Davis", "summary": "Built internal tools and systemized documentation." }
+    ],
+    "available": true
+  },
+  "contact": {
+    "email": "1426davejobs@gmail.com",
+    "linkedin": "https://linkedin.com/in/codingforgood",
+    "github": "https://github.com/smithdavedesign",
+    "resume": "/v4/resume"
+  },
+  "pillars": [
+    { "id": "orchestration", "name": "Orchestration Mastery", "body": "Moving teams from building to spec to designing goals for autonomous agents — and choreographing multiple specialized agents into one reliable workflow." },
+    { "id": "stewardship", "name": "Ethical Stewardship", "body": "A Coding for Good background applied to agents: defining how they are gated, monitored, and aligned with human values." },
+    { "id": "multiplier", "name": "The Force Multiplier", "body": "Training a technical workforce to build its own agentic tools, so AI capability scales past any one person." }
+  ],
+  "metrics": [
+    { "id": "license", "value": "25%", "label": "License optimization identified", "context": "Copilot seat usage analysis surfaced a 25% license optimization opportunity.", "spark": [62, 64, 61, 58, 55, 52, 50, 47] },
+    { "id": "opcost", "value": "15–35%", "label": "Operational cost reduction", "context": "Documented 15–35% operational cost reductions across engineering teams using AI tooling.", "spark": [10, 14, 15, 19, 22, 27, 31, 35] },
+    { "id": "tools", "value": "10+", "label": "Internal agent tools shipped", "context": "Custom internal agent tools deployed by engineers trained through the AI KT Series.", "spark": [0, 1, 2, 3, 5, 7, 9, 11] },
+    { "id": "rote", "value": "40%", "label": "Less developer rote work", "context": "Reduction in repetitive developer work from MCP-based agent tooling.", "spark": [100, 94, 88, 80, 74, 68, 63, 60] }
+  ],
+  "caseStudies": [
+    {
+      "slug": "copilot-roi-engine",
+      "code": "A",
+      "title": "The Governance & ROI Engine",
+      "headline": "Optimizing enterprise intelligence via Copilot analytics.",
+      "action": "Engineered a real-time dashboard for Copilot usage reporting and analysis — benchmarks, adoption trends, team-level comparisons and an ROI calculator built for CTOs and engineering managers.",
+      "tooling": ["Telemetry ingestion", "Custom visualization layer", "TypeScript", "React", "ROI model"],
+      "metric": "Identified a 25% license optimization opportunity and documented 15–35% operational cost reductions across engineering teams.",
+      "problem": "Leadership was paying for AI seats without a clear picture of who used them, how, or what they were worth. The business case for AI investment was anecdotal.",
+      "approach": [
+        "Pulled Copilot telemetry into a rolling 7/14/28-day reporting model across the enterprise.",
+        "Built views by language/IDE, model, team, and individual, with benchmarks against org averages.",
+        "Added an ROI tab that converts hours reclaimed into labor value against license cost.",
+        "Made the report printable for executive review so the numbers travel without the tool."
+      ],
+      "governance": "Usage data is reported at team level for decisions; individual views exist to coach, not to rank.",
+      "image": "/v4/img/copilot-roi-dashboard.jpg",
+      "imageAlt": "Copilot analytics dashboard: enterprise overview with active users, apply rate, chat and agent adoption, daily active users and daily lines-of-code trend charts.",
+      "pipeline": ["telemetry", "normalize", "benchmark", "roi_model", "exec_report"]
+    },
+    {
+      "slug": "digital-workforce-kt-series",
+      "code": "B",
+      "title": "Building the Digital Workforce",
+      "headline": "Scaling agentic capability via MCP training — the AI KT Series.",
+      "action": "Architected an org-wide Knowledge Transfer series training engineers to build Model Context Protocol servers, Skills, and custom instructions — the human infrastructure that makes AI adoption stick.",
+      "tooling": ["Model Context Protocol", "Claude Code", "GitHub Copilot", "Custom Instructions", "Skills"],
+      "metric": "Accelerated the deployment of 10+ custom internal agent tools, reducing developer rote work by 40%.",
+      "problem": "Engineers had AI assistants but no shared patterns for extending them. Every team reinvented prompts, and nobody owned when an agent should stop and ask.",
+      "approach": [
+        "Designed a curriculum: MCP fundamentals → building tools → Skills and IDE optimization → agentic workflows.",
+        "Documented custom instructions that gate which skills an agent may use, per repo and per task.",
+        "Standardized Human-in-the-Loop checkpoints so every generated artifact has a named reviewer.",
+        "Turned workshop outputs into shipped internal tools, not slideware."
+      ],
+      "governance": "Custom instructions define agent scope; HITL checkpoints are mandatory before anything leaves the developer's machine.",
+      "pipeline": ["curriculum", "mcp_server", "custom_instructions", "hitl_gate", "shipped_tool"]
+    },
+    {
+      "slug": "ai-sdlc-tooling",
+      "code": "C",
+      "title": "AI-Powered Developer Tooling",
+      "headline": "Automating the SDLC via intelligent code agents.",
+      "action": "Developed a suite of AI-integrated coding tools that streamline repository management and pull-request review.",
+      "tooling": ["LLM agents", "Map-Reduce-Align", "GitHub API", "Node.js", "MCP"],
+      "metric": "Shorter review cycles and consistent PR quality through structured, evidence-backed agent recommendations.",
+      "problem": "PR review was the bottleneck: large diffs, inconsistent standards, and reviewers re-deriving context every time.",
+      "approach": [
+        "Map: split each PR into file- and concern-level chunks and analyze them in parallel.",
+        "Reduce: merge findings into one evidence-backed report with a confidence score.",
+        "Align: check the report against repo conventions and team standards before surfacing it.",
+        "The agent recommends approve, reject or manual review — a human makes the call."
+      ],
+      "governance": "The agent never merges. Low-confidence or security-relevant findings force manual review.",
+      "pipeline": ["map", "reduce", "align", "human_decision"]
+    },
+    {
+      "slug": "figma-to-jira",
+      "code": "D",
+      "title": "Figma → Jira / Wiki Automation",
+      "headline": "Design context in, tickets and technical docs out.",
+      "action": "LLM + Figma MCP + API integration that auto-generates Jira tickets and technical wiki documentation directly from design context. Owned end to end: product definition, stakeholder alignment with PMs and Scrum Masters, and engineering execution.",
+      "tooling": ["Figma MCP", "LLM", "Jira API", "Confluence", "Node.js"],
+      "metric": "Eliminates manual documentation labor between design and engineering across the org.",
+      "problem": "Every design handoff meant hand-writing tickets and specs that drifted from the source of truth.",
+      "approach": [
+        "Read component structure and annotations from Figma through MCP.",
+        "Generate structured tickets and wiki pages from that context with an LLM.",
+        "Route drafts to the PM for approval before anything is created in Jira."
+      ],
+      "governance": "Drafts only — a PM approves before tickets are created.",
+      "pipeline": ["figma_mcp", "llm_draft", "pm_review", "jira_wiki"]
+    },
+    {
+      "slug": "qa-casegen",
+      "code": "E",
+      "title": "QA Test Case Automation",
+      "headline": "Test cases generated from Storybook through MCP.",
+      "action": "Automated test case generation pipeline via Storybook and MCP servers, reducing manual QA effort while maintaining quality standards team-wide.",
+      "tooling": ["Storybook", "MCP servers", "LLM", "QA tooling"],
+      "metric": "Reduced manual QA effort while keeping quality standards consistent across teams.",
+      "problem": "QA wrote test cases by hand from component states that already existed, fully described, in Storybook.",
+      "approach": [
+        "Expose component stories and their states to an agent through MCP.",
+        "Generate test cases per state (default, active, loading, error).",
+        "QA reviews and accepts cases into the suite."
+      ],
+      "governance": "Generated cases are proposals; QA owns acceptance.",
+      "pipeline": ["storybook", "mcp", "casegen", "qa_review"]
+    }
+  ],
+  "ktSeries": {
+    "title": "AI KT Series: Scaling the Agentic Workforce",
+    "modules": [
+      { "n": "01", "name": "MCP fundamentals", "body": "How models reach tools and data; when to build a server versus a skill." },
+      { "n": "02", "name": "Building tools", "body": "Engineers ship an MCP server against a real internal system." },
+      { "n": "03", "name": "Skills & IDE optimization", "body": "Claude Code, Copilot and custom instructions tuned per repo." },
+      { "n": "04", "name": "Gating & HITL", "body": "Custom instructions that scope agents; mandatory human checkpoints." },
+      { "n": "05", "name": "Agentic workflows", "body": "Multi-step agent runs with clear owners and stop conditions." }
+    ]
+  },
+  "governance": {
+    "intro": "Autonomy is earned, scoped and reversible. Every agent I deploy sits at an explicit level on this ladder, with a named human above it.",
+    "levels": [
+      { "level": "L0", "name": "Suggest", "body": "Agent drafts; human writes. Default for anything customer-facing.", "hitl": "Every output" },
+      { "level": "L1", "name": "Draft & route", "body": "Agent produces an artifact and routes it to a named reviewer (tickets, test cases, PR reports).", "hitl": "Before publish" },
+      { "level": "L2", "name": "Act in sandbox", "body": "Agent executes inside a scoped environment with gated skills and logged tool calls.", "hitl": "Before merge / deploy" },
+      { "level": "L3", "name": "Act with hard stops", "body": "Agent runs end to end; defined hard stops (security, money, people data) always escalate.", "hitl": "On hard stop" }
+    ],
+    "principles": [
+      "Every agent has a named human owner.",
+      "Hard stops for security, spend, and personal data are non-negotiable.",
+      "Tool calls are logged and reviewable.",
+      "Efficiency claims are validated against telemetry, not anecdotes."
+    ]
+  },
+  "stack": [
+    { "name": "Model Context Protocol", "group": "AI", "why": "The standard interface between models and tools — what I teach engineers to build on, and what powers this site's assistant." },
+    { "name": "Claude / Claude Code", "group": "AI", "why": "Primary agentic coding and reasoning model; strong tool use for multi-step runs." },
+    { "name": "GitHub Copilot", "group": "AI", "why": "Org-wide pair programmer — and the telemetry source for the ROI engine." },
+    { "name": "LangGraph", "group": "AI", "why": "Explicit state graphs for multi-agent choreography with checkpoints where humans step in." },
+    { "name": "Next.js", "group": "Web", "why": "Static-first rendering: fast pages that both people and LLM crawlers can read." },
+    { "name": "Tailwind CSS v4", "group": "Web", "why": "Design tokens as CSS variables; one system from component to page." },
+    { "name": "TypeScript", "group": "Web", "why": "Typed contracts between agents, tools and UI." },
+    { "name": "Node.js / NestJS", "group": "Backend", "why": "MCP servers, automation pipelines and API integrations." },
+    { "name": "Python", "group": "Backend", "why": "Data work and model-adjacent tooling." },
+    { "name": "AWS / Docker", "group": "Infra", "why": "Where internal tools run in production." },
+    { "name": "GitHub Actions", "group": "Infra", "why": "CI/CD and scheduled agent jobs." },
+    { "name": "Snowflake / Redis / Mongo", "group": "Data", "why": "Telemetry storage, caching and app data behind the dashboards." }
+  ],
+  "runs": [
+    { "id": "figma_to_jira", "steps": ["read figma frame via mcp", "draft 14 tickets + wiki page", "route to pm"], "result": "14 tickets drafted", "duration": "0:42" },
+    { "id": "qa_casegen", "steps": ["load storybook states", "generate cases (default/active/loading/error)", "route to qa"], "result": "38 cases proposed", "duration": "1:10" },
+    { "id": "copilot_roi_rollup", "steps": ["ingest 28d telemetry", "benchmark teams", "compute roi"], "result": "report ready", "duration": "0:18" },
+    { "id": "pr_review", "steps": ["map: 12 files", "reduce: 1 report", "align: repo conventions"], "result": "conf 0.94 · awaiting human", "duration": "0:27", "hitl": true }
+  ]
+}

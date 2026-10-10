@@ -50,13 +50,9 @@ router.get('/v3/landingPage', function (req, res, next) {
 });
 
 
-// V4 – Coming soon (redirect to v3 until ready)
-router.get('/v4/', function (req, res) {
-    res.redirect('/v3/landingPage');
-});
-
+// V4 – served as a static Next.js export from server.js; keep the old landingPage URL working
 router.get('/v4/landingPage', function (req, res) {
-    res.redirect('/v3/landingPage');
+    res.redirect(301, '/v4/');
 });
 
 // Resume
