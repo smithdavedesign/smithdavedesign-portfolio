@@ -1,2 +1,6 @@
 node_modules/
+
+# Secrets stay out of git (the token committed here in 2023 was revoked on 2026-10-13)
 .env
+.env.*
+!.env.example
