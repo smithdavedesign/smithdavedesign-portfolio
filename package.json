@@ -3,14 +3,20 @@
   "description": "a really cool app",
   "version": "1.0.0",
   "engines": {
-    "node": "v20.6.1"
+    "node": "22.x"
   },
   "scripts": {
     "start": "node server.js",
-    "heroku": "npm install --dev && npm run build"
+    "heroku": "npm install --dev && npm run build",
+    "heroku-postbuild": "cd portfolio-v4 && npm ci --include=dev && npm run build",
+    "build:v4": "cd portfolio-v4 && npm run build",
+    "mcp:stdio": "node JS/v4/mcp-stdio.js",
+    "dev:v4": "scripts/dev-v4.sh"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.133.0",
     "@fortawesome/fontawesome-free": "^5.14.0",
+    "@modelcontextprotocol/sdk": "^1.32.1",
     "@octokit/core": "^5.0.0",
     "body-parser": "^1.19.0",
     "bootstrap-social": "^5.1.1",
@@ -21,6 +27,7 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "express-ejs-layouts": "^2.5.0",
+    "express-rate-limit": "^8.7.1",
     "fs": "0.0.1-security",
     "googleapis": "^67.0.0",
     "https": "^1.0.0",
@@ -29,7 +36,8 @@
     "nodemailer": "^6.4.17",
     "os": "^0.1.1",
     "purgecss": "^5.0.0",
-    "util": "^0.12.3"
+    "util": "^0.12.3",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"

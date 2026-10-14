@@ -1,36 +1,139 @@
 @import "tailwindcss";
 
+/* Operator Console — design tokens */
 @theme {
-  --font-sans: "Outfit", sans-serif;
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, "SFMono-Regular", monospace;
 
-  --color-glass-bg: rgba(255, 255, 255, 0.03);
-  --color-glass-border: rgba(255, 255, 255, 0.08);
-  --color-glass-hover: rgba(255, 255, 255, 0.06);
-  --color-neon-blue: #3b82f6;
-  --color-neon-purple: #8b5cf6;
-
-  --shadow-glass: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  --color-bg: #0d0c0a;
+  --color-panel: #141310;
+  --color-raised: #1b1a16;
+  --color-line: #2a2722;
+  --color-line-strong: #3a362f;
+  --color-ink: #ece7de;
+  --color-muted: #a39d91;
+  --color-faint: #6f6a60;
+  --color-signal: #f2a93b;
+  --color-ok: #5bd18b;
+  --color-stop: #e5634d;
 }
 
-:root {
-  --background: #050505;
-  --foreground: #f0f0f0;
+html {
+  background: var(--color-bg);
+  color-scheme: dark;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-bg);
+  color: var(--color-ink);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 2px;
+}
+
+@layer components {
+/* Panels share 1px hairlines like an ops dashboard: the grid background shows through the gap. */
+.console-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--color-line);
+  border: 1px solid var(--color-line);
+  grid-template-columns: minmax(0, 1fr);
+}
+.console-grid > * {
+  background: var(--color-panel);
+  min-width: 0;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.dot {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: var(--color-ok);
+  animation: pulse 2.4s ease-out infinite;
+}
+.dot[data-tone="signal"] { background: var(--color-signal); animation: none; }
+.dot[data-tone="stop"] { background: var(--color-stop); animation: none; }
+
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgb(91 209 139 / 0.55); }
+  70%, 100% { box-shadow: 0 0 0 6px rgb(91 209 139 / 0); }
+}
+
+.caret::after {
+  content: "▌";
+  margin-left: 2px;
+  color: var(--color-signal);
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+
+@keyframes line-in {
+  from { opacity: 0; transform: translateY(2px); }
+  to { opacity: 1; transform: none; }
+}
+.line-in { animation: line-in 240ms ease-out both; }
+
+/* Subtle measurement grid behind the hero */
+.blueprint {
   background-image:
-    radial-gradient(circle at 15% 50%, rgba(59, 130, 246, 0.08), transparent 25%),
-    radial-gradient(circle at 85% 30%, rgba(139, 92, 246, 0.08), transparent 25%);
-  min-height: 100vh;
+    linear-gradient(to right, rgb(236 231 222 / 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(236 231 222 / 0.035) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 
-.glass-panel {
-  @apply bg-[var(--color-glass-bg)] border border-[var(--color-glass-border)] rounded-3xl backdrop-blur-xl shadow-[var(--shadow-glass)] transition-all duration-300;
+/* Tooltips: shown on hover and keyboard focus */
+.tip { position: relative; }
+.tip > [role="tooltip"] {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 1px);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-2px);
+  transition: opacity 120ms, transform 120ms, visibility 120ms;
+}
+.tip:hover > [role="tooltip"],
+.tip:focus-within > [role="tooltip"] {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
 }
 
-.glass-panel:hover {
-  @apply bg-[var(--color-glass-hover)] border-white/20;
+input[type="range"] {
+  accent-color: var(--color-signal);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  html { scroll-behavior: auto; }
 }

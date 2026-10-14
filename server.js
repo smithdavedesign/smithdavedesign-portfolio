@@ -14,6 +14,7 @@ const app = express();//create instance of express
 
 //Express middle ware
 app.set('port', (process.env.PORT || 5000))
+app.set('trust proxy', 1); // Heroku router: real client IP for rate limiting
 app.set('view engine', 'ejs');//view engine
 app.use(expressLayouts);
 app.use(bodyParser.json());
@@ -30,8 +31,15 @@ app.use('/static', express.static('public'));
 app.use(express.static("."));
 
 //routes
+// V4 – AI Orchestrator: static Next.js export + MCP/chat endpoints (see portfolio-v4/, JS/v4/)
+app.use('/v4', require('./JS/v4/router'));
+app.use('/v4', express.static('portfolio-v4/out', { extensions: ['html'] }));
 app.use('/', require('./JS/routes/renderRoutes'));
 app.use('/cronjobs', cronJobRouter);
+// V4 404 page for anything under /v4 nothing else handled
+app.use('/v4', function (req, res) {
+    res.status(404).sendFile('404.html', { root: 'portfolio-v4/out' });
+});
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
